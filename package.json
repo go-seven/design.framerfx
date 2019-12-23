@@ -1,10 +1,14 @@
 {
 	"license": "MIT",
-	"name": "design.framerfx",
+	"name": "go-seven-design.framerfx",
 	"private": true,
 	"main": "dist/index.js",
 	"devDependencies": {
 		"@types/react": "^16.8"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/go-seven/design.framerfx.git"
 	},
 	"peerDependencies": {
 		"framer": "^1.0",
