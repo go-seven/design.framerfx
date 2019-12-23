@@ -1,0 +1,22 @@
+{
+	"license": "MIT",
+	"name": "design.framerfx",
+	"private": true,
+	"main": "dist/index.js",
+	"devDependencies": {
+		"@types/react": "^16.8"
+	},
+	"peerDependencies": {
+		"framer": "^1.0",
+		"react": "^16.8"
+	},
+	"framer": {
+		"displayName": "Go Seven",
+		"id": "cbbc74d0-273a-495e-8aff-01109bb3907e"
+	},
+	"author": "Gianluca Casati",
+	"version": "1.0.0",
+	"dependencies": {
+		"go-seven-assets": "go-seven/assets"
+	}
+}
