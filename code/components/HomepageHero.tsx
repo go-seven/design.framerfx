@@ -1,38 +1,220 @@
 import * as React from "react"
-import { addPropertyControls, Frame, Stack } from "framer"
+import { Frame, Stack } from "framer"
 import { url } from "framer/resource"
+
+import { mobile } from "../breakpoints"
 
 import { Logo } from "./Logo"
 
-export function HomepageHero({ logoImage, ...props }) {
-    return (
-        <Frame {...props} className="HomepageHero" position="relative">
-            {/* Full page */}
-            <Stack>
-                {/* Header */}
-                <Stack>
-                    <Frame
-                        style={{
-                            height: "100%",
-                            width: "469",
-                            overflow: "visible",
-                        }}
-                    >
-                        <Logo image={logoImage} />
-                    </Frame>
+export function HomepageHero({
+  borderRadius,
+  clientWidth,
+  color,
+  logoImage,
+}) {
+  const isMobile = clientWidth <= mobile
+
+  return (
+    <Stack
+      style={{
+        background: "linear-gradient(270deg, #1854a5 0%, #0c3d8d 100%)",
+        width: "100%",
+        height: "100%",
+      }}
+    >
+      <Frame
+        color={color}
+        background="transparent"
+        style={{
+          flex: isMobile ? 2 : 1,
+          width: "100%",
+          textTransform: "uppercase",
+        }}
+      >
+        <Stack
+          direction={isMobile ? "vertical" : "horizontal"}
+          style={{
+            width: "100%",
+            height: "100%",
+          }}
+        >
+          <Frame
+            background="transparent"
+            style={{
+              flex: 1,
+              width: "100%"
+            }}
+          >
+            <Logo image={logoImage} />
+          </Frame>
+
+          <Frame
+            background="transparent"
+            style={{
+              flex: 2,
+              width: "100%"
+            }}
+          >
+            <Stack
+              direction={isMobile ? "vertical" : "horizontal"}
+              style={{
+                width: "100%",
+                height: "100%",
+              }}
+            >
+              <Frame
+                background="transparent"
+                style={{
+                  flex: 1,
+                  width: "100%"
+                }}
+              >
+                Caratteristiche
+              </Frame>
+
+              <Frame
+                background="transparent"
+                style={{
+                  flex: 1,
+                  width: "100%"
+                }}
+              >
+                Tariffe
+              </Frame>
+
+              <Frame
+                background="transparent"
+                style={{
+                  flex: 2,
+                  width: "100%"
+                }}
+              >
+                <Stack
+                  direction="horizontal"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    padding: "2rem",
+                  }}
+                >
+                  <Frame
+                    backgroundColor="#a9ccec"
+                    borderRadius={borderRadius}
+                    color="#1a55a6"
+                    style={{
+                      flex: 1,
+                      height: "4rem",
+                    }}
+                  >
+                    Accedi
+                  </Frame>
+
+                  <Frame
+                    backgroundColor="#164179"
+                    borderRadius={borderRadius}
+                    color="#c7dcf3"
+                    style={{
+                      flex: 1,
+                      height: "4rem",
+                    }}
+                  >
+                    Registrati
+                  </Frame>
                 </Stack>
-                {/* Description */}
-                <Frame>Description</Frame>
-                {/* Welcome */}
-                <Frame>Welcome</Frame>
+              </Frame>
             </Stack>
-        </Frame>
-    )
-}
+          </Frame>
+        </Stack>
+      </Frame>
 
-HomepageHero.defaultProps = {
-    height: "100%",
-    width: "100%",
-}
+      <Frame
+        background="transparent"
+        color={color}
+        style={{
+          flex: 1,
+          width: "100%"
+        }}
+      >
+        <Stack
+          style={{
+            width: "100%",
+            height: "100%",
+            padding: "0 2rem 0 2rem",
+            fontSize: isMobile ? 18 : 32,
+            fontWeight: 600,
+          }}
+        >
+          <Frame
+            background="transparent"
+						style={{
+							flex: 1,
+							width: "100%",
+						}}
+          />
 
-addPropertyControls(HomepageHero, {})
+          <Frame
+            background="transparent"
+						style={{
+							flex: 1,
+							width: "100%",
+						}}
+          >
+            <span>
+              Abbrevia gratuitamente le tue URL.
+            </span>
+          </Frame>
+
+          <Frame
+            background="transparent"
+						style={{
+							flex: 1,
+							width: "100%",
+						}}
+          >
+            <span>
+              Sfrutta un ottimo strumento di analisi
+            </span>
+          </Frame>
+
+          <Frame
+            background="transparent"
+						style={{
+							flex: 1,
+							width: "100%",
+						}}
+          />
+        </Stack>
+      </Frame>
+
+      <Frame
+        background="transparent"
+        color={color}
+        style={{
+          flex: 1,
+          width: "100%",
+          fontSize: isMobile ? 18 : 32,
+        }}
+      >
+        <Stack
+          style={{
+            width: "100%",
+            height: "100%",
+            padding: "0 2rem 0 2rem",
+          }}
+        >
+          <Frame
+            background="transparent"
+						style={{
+							flex: 1,
+							width: "100%",
+						}}
+          >
+            <span>
+              Benvenuto in Go Seven. Puoi creare le tue URL accorciate, gestire comodamente le tue campagne di marketing, monitorando le statistiche sui click e condividendo i risultati con i tuoi collaboratori.
+            </span>
+          </Frame>
+        </Stack>
+      </Frame>
+    </Stack>
+  )
+}

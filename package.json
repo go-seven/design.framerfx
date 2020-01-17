@@ -8,8 +8,7 @@
 		"postsass:fonts": "cpy node_modules/go-seven-assets/fonts/* fonts/",
 		"sass": "run-p sass:*",
 		"sass:bulma": "node-sass --include-path node_modules node_modules/go-seven-assets/sass/bulma.scss > code/bulma.css",
-		"sass:fonts": "node-sass --include-path node_modules node_modules/go-seven-assets/css/lato-latin.css > code/fonts.css",
-		"sass:style": "node-sass --include-path code/sass code/sass/style.scss > code/style.css"
+		"sass:fonts": "node-sass --include-path node_modules node_modules/go-seven-assets/css/lato-latin.css > code/fonts.css"
 	},
 	"devDependencies": {
 		"@types/react": "^16.8",
