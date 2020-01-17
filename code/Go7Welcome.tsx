@@ -1,9 +1,16 @@
 import * as React from "react"
 import { Frame, addPropertyControls, ControlType } from "framer"
 
+const defaultProps = {
+    height: 128,
+    width: 240,
+    text: "",
+}
+
 export function Go7Welcome(props) {
     const { text, ...rest } = props
 
+    console.log(props)
     return (
         <Frame
             {...rest}
@@ -22,12 +29,7 @@ export function Go7Welcome(props) {
     )
 }
 
-Go7Welcome.defaultProps = {
-    height: 128,
-    width: 240,
-    text: "",
-    tint: "#0099ff",
-}
+Go7Welcome.defaultProps = defaultProps
 
 addPropertyControls(Go7Welcome, {
     text: {

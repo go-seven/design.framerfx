@@ -1,7 +1,7 @@
 // WARNING: this file is auto generated, any changes will be lost
 import { createDesignComponent, CanvasStore } from "framer"
 const canvas = CanvasStore.shared(); // CANVAS_DATA;
-export const Hero = createDesignComponent<{parentSize?:{width:number|string,height:number|string},width?:number|string,height?:number|string}>(canvas, "id_i0dt9kdpM", {}, 1440,810);
+export const ProtoHero = createDesignComponent<{parentSize?:{width:number|string,height:number|string},width?:number|string,height?:number|string}>(canvas, "id_i0dt9kdpM", {}, 1440,810);
 
 export const colors = Object.freeze({
     /** #0C3D8D */

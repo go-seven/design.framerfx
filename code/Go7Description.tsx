@@ -1,8 +1,14 @@
 import * as React from "react"
 import { Frame, addPropertyControls, ControlType } from "framer"
 
+const defaultProps = {
+    fontSizeVW: 2,
+    text1: "",
+    text2: "",
+}
+
 export function Go7Description(props) {
-    const { text1, text2, ...rest } = props
+    const { fontSizeVW, text1, text2, ...rest } = props
 
     return (
         <Frame
@@ -13,8 +19,9 @@ export function Go7Description(props) {
             }}
             style={{
                 color: "#fff",
-                fontSize: 42,
+                fontSize: `${fontSizeVW}vw`,
                 fontWeight: 600,
+                width: "100%",
             }}
         >
             {text1}
@@ -24,15 +31,14 @@ export function Go7Description(props) {
     )
 }
 
-Go7Description.defaultProps = {
-    height: 128,
-    width: 240,
-    text1: "",
-    text2: "",
-}
+Go7Description.defaultProps = defaultProps
 
-// Learn more: https://framer.com/api/property-controls/
 addPropertyControls(Go7Description, {
+    fontSizeVW: {
+        title: "FontSizeVW",
+        type: ControlType.Number,
+        defaultValue: Go7Description.defaultProps.fontSizeVW,
+    },
     text1: {
         title: "Text",
         type: ControlType.String,

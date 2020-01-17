@@ -842,7 +842,7 @@ globule@^1.0.0:
     lodash "~4.17.10"
     minimatch "~3.0.2"
 
-go-seven-assets@go-seven/assets:
+"go-seven-assets@github:go-seven/assets":
   version "1.0.0"
   resolved "https://codeload.github.com/go-seven/assets/tar.gz/f76de90406ac5f4a95ac7e685401f5eeaa984b08"
 
@@ -1491,10 +1491,10 @@ node-gyp@^3.8.0:
     tar "^2.0.0"
     which "1"
 
-node-sass@^4.13.0:
-  version "4.13.0"
-  resolved "https://registry.yarnpkg.com/node-sass/-/node-sass-4.13.0.tgz#b647288babdd6a1cb726de4545516b31f90da066"
-  integrity sha512-W1XBrvoJ1dy7VsvTAS5q1V45lREbTlZQqFbiHb3R3OTTCma0XBtuG6xZ6Z4506nR4lmHPTqVRwxT6KgtWC97CA==
+node-sass@^4.13.1:
+  version "4.13.1"
+  resolved "https://registry.yarnpkg.com/node-sass/-/node-sass-4.13.1.tgz#9db5689696bb2eec2c32b98bfea4c7a2e992d0a3"
+  integrity sha512-TTWFx+ZhyDx1Biiez2nB0L3YrCZ/8oHagaDalbuBSlqXgUPsdkUSzJsVxeDO9LtPB49+Fh3WQl3slABo6AotNw==
   dependencies:
     async-foreach "^0.1.3"
     chalk "^1.1.1"
@@ -2364,10 +2364,10 @@ trim-newlines@^2.0.0:
   dependencies:
     glob "^7.1.2"
 
-trunx@^0.26.0:
-  version "0.26.0"
-  resolved "https://registry.yarnpkg.com/trunx/-/trunx-0.26.0.tgz#065bfaad443fa5bfd720b574950f9b32c925edc0"
-  integrity sha512-eK2vrBCT0IfutIDA7Mrly+FBkgv/1YhrxYEd74ztnSrq/gzapliV72eFZsF/NN/w/+R8IGZpe88IBZ7+CfiGtA==
+trunx@^0.28.0:
+  version "0.28.0"
+  resolved "https://registry.yarnpkg.com/trunx/-/trunx-0.28.0.tgz#713b8433bad7a480bcbcea8171ad038bf6659dd9"
+  integrity sha512-wSakhHkJcRQ/PvUcufeDDU4oiNJhmY1L1VTdUJHQJ0IKqHRnWid825JjEh7Q29scMVO6iHFxbBP++r1iMgJJYw==
   dependencies:
     bulma "^0.8.0"
     classnames "^2.2.6"

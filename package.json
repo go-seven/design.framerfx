@@ -4,11 +4,12 @@
 	"private": true,
 	"main": "dist/index.js",
 	"scripts": {
-    "postinstall": "run-p sass",
-    "postsass:fonts": "cpy node_modules/go-seven-assets/fonts/* fonts/",
+		"postinstall": "run-p sass",
+		"postsass:fonts": "cpy node_modules/go-seven-assets/fonts/* fonts/",
 		"sass": "run-p sass:*",
 		"sass:bulma": "node-sass --include-path node_modules node_modules/go-seven-assets/sass/bulma.scss > code/bulma.css",
-		"sass:fonts": "node-sass --include-path node_modules node_modules/go-seven-assets/css/lato-latin.css > code/fonts.css"
+		"sass:fonts": "node-sass --include-path node_modules node_modules/go-seven-assets/css/lato-latin.css > code/fonts.css",
+		"sass:style": "node-sass --include-path code/sass code/sass/style.scss > code/style.css"
 	},
 	"devDependencies": {
 		"@types/react": "^16.8",
@@ -30,8 +31,8 @@
 	"author": "Gianluca Casati",
 	"version": "1.0.0",
 	"dependencies": {
-		"go-seven-assets": "go-seven/assets",
-		"node-sass": "^4.13.0",
-		"trunx": "^0.26.0"
+		"go-seven-assets": "github:go-seven/assets",
+		"node-sass": "^4.13.1",
+		"trunx": "^0.28.0"
 	}
 }
