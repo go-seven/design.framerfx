@@ -1,19 +1,14 @@
 import * as React from "react"
 import { Frame, Stack } from "framer"
-import { url } from "framer/resource"
-
-import { mobile } from "../breakpoints"
 
 import { Logo } from "./Logo"
 
 export function HomepageHero({
   borderRadius,
-  clientWidth,
+  isMobile,
   color,
   logoImage,
 }) {
-  const isMobile = clientWidth <= mobile
-
   return (
     <Stack
       style={{
@@ -139,7 +134,7 @@ export function HomepageHero({
           style={{
             width: "100%",
             height: "100%",
-            padding: "0 2rem 0 2rem",
+            padding: isMobile ? "0 2rem 0 2rem" : "0 4rem 0 4rem",
             fontSize: isMobile ? 18 : 32,
             fontWeight: 600,
           }}
@@ -199,7 +194,7 @@ export function HomepageHero({
           style={{
             width: "100%",
             height: "100%",
-            padding: "0 2rem 0 2rem",
+            padding: isMobile ? "0 2rem 0 2rem" : "0 4rem 0 4rem",
           }}
         >
           <Frame
