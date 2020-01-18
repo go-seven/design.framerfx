@@ -2,13 +2,12 @@
 	"license": "MIT",
 	"name": "go-seven-design.framerfx",
 	"private": true,
-	"main": "dist/index.js",
 	"scripts": {
-		"postinstall": "run-p sass",
+    "postinstall": "run-p sass",
 		"postsass:fonts": "cpy node_modules/go-seven-assets/fonts/* fonts/",
 		"sass": "run-p sass:*",
-		"sass:bulma": "node-sass --include-path node_modules node_modules/go-seven-assets/sass/bulma.scss > code/bulma.css",
-		"sass:fonts": "node-sass --include-path node_modules node_modules/go-seven-assets/css/lato-latin.css > code/fonts.css"
+		"sass:bulma": "node-sass --output-style compact --include-path node_modules node_modules/go-seven-assets/sass/bulma.scss > code/bulma.css",
+		"sass:fonts": "node-sass --output-style compact --include-path node_modules node_modules/go-seven-assets/css/lato-latin.css > code/fonts.css"
 	},
 	"devDependencies": {
 		"@types/react": "^16.8",
@@ -31,6 +30,7 @@
 	"version": "1.0.0",
 	"dependencies": {
 		"go-seven-assets": "github:go-seven/assets",
+		"go-seven-i18n": "github:go-seven/i18n",
 		"node-sass": "^4.13.1",
 		"trunx": "^0.28.0"
 	}
