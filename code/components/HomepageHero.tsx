@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Frame, Stack } from "framer"
+import { useIntl } from "react-intl"
 
 import { Logo } from "./Logo"
 
@@ -9,6 +10,8 @@ export function HomepageHero({
   color,
   logoImage,
 }) {
+  const intl = useIntl()
+
   return (
     <Stack
       style={{
@@ -101,7 +104,7 @@ export function HomepageHero({
                       height: "4rem",
                     }}
                   >
-                    Accedi
+                    {intl.formatMessage({ id: "Authentication.Button.Enter" })}
                   </Frame>
 
                   <Frame
@@ -113,7 +116,7 @@ export function HomepageHero({
                       height: "4rem",
                     }}
                   >
-                    Registrati
+                    {intl.formatMessage({ id: "Authentication.Button.Register" })}
                   </Frame>
                 </Stack>
               </Frame>

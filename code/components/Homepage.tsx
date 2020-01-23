@@ -1,14 +1,12 @@
 import { Frame } from "framer"
 import * as React from "react"
-import { useIntl } from "react-intl"
+import { FormattedMessage } from "react-intl"
 
 import ErrorBoundaryText from "./ErrorBoundaryText"
 
-export function HomepagePricing(props) {
-  const intl = useIntl()
-
+export function Homepage(props) {
   return (
-    <ErrorBoundaryText message="Pricing">
+    <ErrorBoundaryText message="Go Seven">
       <Frame
         background="transparent"
         style={{
@@ -16,8 +14,9 @@ export function HomepagePricing(props) {
           width: "100%"
         }}
       >
-        {intl.formatMessage({ id: "Homepage.Pricing" })}
+        <FormattedMessage id="Homepage.Pricing" />
       </Frame>
     </ErrorBoundaryText>
   )
 }
+

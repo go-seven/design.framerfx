@@ -3,7 +3,8 @@
 	"name": "go-seven-design.framerfx",
 	"private": true,
 	"scripts": {
-    "postinstall": "run-p sass",
+		"i18n": "cpy node_modules/go-seven-i18n/dist/* code/i18n/",
+		"postinstall": "run-p i18n sass",
 		"postsass:fonts": "cpy node_modules/go-seven-assets/fonts/* fonts/",
 		"sass": "run-p sass:*",
 		"sass:bulma": "node-sass --output-style compact --include-path node_modules node_modules/go-seven-assets/sass/bulma.scss > code/bulma.css",
@@ -32,6 +33,7 @@
 		"go-seven-assets": "github:go-seven/assets",
 		"go-seven-i18n": "github:go-seven/i18n",
 		"node-sass": "^4.13.1",
+		"react-intl": "^3.11.0",
 		"trunx": "^0.28.0"
 	}
 }

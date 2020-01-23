@@ -1,10 +1,13 @@
+import { url } from "framer/resource"
 import * as React from "react"
 import { addPropertyControls, ControlType, Frame } from "framer"
-import { url } from "framer/resource"
+import { IntlProvider } from "react-intl"
 
 import { mobile } from "./breakpoints"
 
 import { HomepageHero } from "./components/HomepageHero"
+
+import * as i18n from "./i18n/"
 
 // TODO resize handler, see for example:
 // https://gist.github.com/steveruizok/b9ff0a24a735f37c16794bc27da36164
@@ -13,17 +16,25 @@ export function _HomepageHero({
   borderRadius,
   clientWidth,
   color,
+  locale,
   ...props
 }) {
+  const localeConfig = i18n.config[locale]
+
   return (
-    <Frame {...props}>
-      <HomepageHero
-        borderRadius={borderRadius}
-        color={color}
-        logoImage={url("./node_modules/go-seven-assets/images/logotype.png")}
-        isMobile={clientWidth <= mobile}
-      />
-    </Frame>
+    <IntlProvider
+      defaultLocale={i18n.defaultLocale}
+      {...localeConfig}
+    >
+      <Frame {...props}>
+        <HomepageHero
+          borderRadius={borderRadius}
+          color={color}
+          logoImage={url("./node_modules/go-seven-assets/images/logotype.png")}
+          isMobile={clientWidth <= mobile}
+        />
+      </Frame>
+    </IntlProvider>
   )
 }
 
@@ -31,6 +42,7 @@ _HomepageHero.defaultProps = {
   borderRadius: 10,
   clientWidth: 400,
   color: "#fff",
+  locale: i18n.defaultLocale,
 }
 
 addPropertyControls(_HomepageHero, {
@@ -48,5 +60,12 @@ addPropertyControls(_HomepageHero, {
     title: "Text Color",
     type: ControlType.String,
     defaultValue: _HomepageHero.defaultProps.color,
+  },
+  locale: {
+    title: "Locale",
+    type: ControlType.Enum,
+    defaultValue: i18n.defaultLocale,
+    options: i18n.localeCodes,
+    optionTitles: i18n.localeNames,
   },
 })
