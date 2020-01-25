@@ -777,7 +777,7 @@
             "clip" : true,
             "codeComponentIdentifier" : ".\/_HomepageFeatures.tsx__HomepageFeatures",
             "codeComponentProps" : {
-              "locale" : "en"
+              "locale" : "it"
             },
             "codeOverrideEnabled" : false,
             "constraintsLocked" : false,
@@ -939,7 +939,7 @@
             "clip" : true,
             "codeComponentIdentifier" : ".\/_HomepagePricing.tsx__HomepagePricing",
             "codeComponentProps" : {
-              "locale" : "en"
+              "locale" : "it"
             },
             "codeOverrideEnabled" : false,
             "constraintsLocked" : false,

@@ -4,6 +4,7 @@ import { FormattedMessage } from "react-intl"
 
 import ErrorBoundaryText from "./ErrorBoundaryText"
 
+// TODO use this wrapper for the whole homepage
 export function Homepage(props) {
   return (
     <ErrorBoundaryText message="Go Seven">

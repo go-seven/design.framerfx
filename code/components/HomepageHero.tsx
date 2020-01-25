@@ -67,7 +67,7 @@ export function HomepageHero({
                   width: "100%"
                 }}
               >
-                Caratteristiche
+                {intl.formatMessage({ id: "Homepage.Features" })}
               </Frame>
 
               <Frame
@@ -77,7 +77,7 @@ export function HomepageHero({
                   width: "100%"
                 }}
               >
-                Tariffe
+                {intl.formatMessage({ id: "Homepage.Pricing" })}
               </Frame>
 
               <Frame
@@ -158,7 +158,7 @@ export function HomepageHero({
 						}}
           >
             <span>
-              Abbrevia gratuitamente le tue URL.
+              {intl.formatMessage({ id: "Homepage.Hero.Tagline1" })}
             </span>
           </Frame>
 
@@ -170,7 +170,7 @@ export function HomepageHero({
 						}}
           >
             <span>
-              Sfrutta un ottimo strumento di analisi
+              {intl.formatMessage({ id: "Homepage.Hero.Tagline2" })}
             </span>
           </Frame>
 
@@ -208,7 +208,7 @@ export function HomepageHero({
 						}}
           >
             <span>
-              Benvenuto in Go Seven. Puoi creare le tue URL accorciate, gestire comodamente le tue campagne di marketing, monitorando le statistiche sui click e condividendo i risultati con i tuoi collaboratori.
+              {intl.formatMessage({ id: "Homepage.Hero.Welcome" })}
             </span>
           </Frame>
         </Stack>

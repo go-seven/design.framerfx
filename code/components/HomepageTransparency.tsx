@@ -1,7 +1,10 @@
 import * as React from "react"
 import { Frame } from "framer"
+import { useIntl } from "react-intl"
 
 export function HomepageTransparency() {
+  const intl = useIntl()
+
   return (
     <Frame
       backgroundColor="#D6E9F6"
@@ -11,7 +14,7 @@ export function HomepageTransparency() {
         width: "100%"
       }}
     >
-      Go Seven è un servizio sicuro e trasparente. Non utilizziamo nessun tipo di cookies.
+      {intl.formatMessage({ id: "Homepage.Transparency" })}
     </Frame>
   )
 }
