@@ -30,8 +30,10 @@ export function _HomepageHero ({
         <HomepageHero
           borderRadius={borderRadius}
           color={color}
-          logoImage={url('./node_modules/go-seven-assets/images/logotype.png')}
           isMobile={clientWidth <= mobile}
+          logoImage={url('./node_modules/go-seven-assets/images/logotype.png')}
+          onClickEnter={Function.prototype}
+          onClickRegister={Function.prototype}
         />
       </Frame>
     </IntlProvider>

@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { Frame } from 'framer'
-import { url } from 'framer/resource'
 
 const width = 241
 const height = 60

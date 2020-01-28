@@ -1351,7 +1351,7 @@ globule@^1.0.0:
 
 "go-seven-i18n@github:go-seven/i18n":
   version "0.0.0"
-  resolved "https://codeload.github.com/go-seven/i18n/tar.gz/4f142d502dcee5c1bcac96eb4f8995eeebf66b76"
+  resolved "https://codeload.github.com/go-seven/i18n/tar.gz/78bd7b81127859a33198d63aa35f103888d31bef"
 
 graceful-fs@^4.1.2:
   version "4.2.3"

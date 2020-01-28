@@ -26,9 +26,9 @@
 		"react-intl": "^3.11.0",
 		"typescript": "^3.7.5"
 	},
-  "pre-commit": [
-    "eslint"
-  ],
+	"pre-commit": [
+		"eslint"
+	],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/go-seven/design.framerfx.git"

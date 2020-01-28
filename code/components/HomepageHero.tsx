@@ -6,9 +6,11 @@ import { Logo } from './Logo'
 
 export function HomepageHero ({
   borderRadius,
-  isMobile,
   color,
-  logoImage
+  logoImage,
+  isMobile,
+  onClickEnter,
+  onClickRegister,
 }) {
   const intl = useIntl()
 
@@ -99,6 +101,7 @@ export function HomepageHero ({
                     backgroundColor="#a9ccec"
                     borderRadius={borderRadius}
                     color="#1a55a6"
+                    onClick={onClickEnter}
                     style={{
                       flex: 1,
                       height: '4rem'
@@ -111,6 +114,7 @@ export function HomepageHero ({
                     backgroundColor="#164179"
                     borderRadius={borderRadius}
                     color="#c7dcf3"
+                    onClick={onClickRegister}
                     style={{
                       flex: 1,
                       height: '4rem'

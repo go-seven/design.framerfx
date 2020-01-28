@@ -4,7 +4,7 @@ import { useIntl } from 'react-intl'
 
 import ErrorBoundaryText from './ErrorBoundaryText'
 
-export function HomepagePricing (props) {
+export function HomepagePricing () {
   const intl = useIntl()
 
   return (
