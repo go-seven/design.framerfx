@@ -1,18 +1,18 @@
-import { url } from "framer/resource"
-import * as React from "react"
-import { addPropertyControls, ControlType, Frame } from "framer"
-import { IntlProvider } from "react-intl"
+import { url } from 'framer/resource'
+import * as React from 'react'
+import { addPropertyControls, ControlType, Frame } from 'framer'
+import { IntlProvider } from 'react-intl'
 
-import { mobile } from "./breakpoints"
+import { mobile } from './breakpoints'
 
-import { HomepageHero } from "./components/HomepageHero"
+import { HomepageHero } from './components/HomepageHero'
 
-import * as i18n from "./i18n/"
+import * as i18n from './i18n/'
 
 // TODO resize handler, see for example:
 // https://gist.github.com/steveruizok/b9ff0a24a735f37c16794bc27da36164
 // resize must be implemented in the actual container, document an example.
-export function _HomepageHero({
+export function _HomepageHero ({
   borderRadius,
   clientWidth,
   color,
@@ -30,7 +30,7 @@ export function _HomepageHero({
         <HomepageHero
           borderRadius={borderRadius}
           color={color}
-          logoImage={url("./node_modules/go-seven-assets/images/logotype.png")}
+          logoImage={url('./node_modules/go-seven-assets/images/logotype.png')}
           isMobile={clientWidth <= mobile}
         />
       </Frame>
@@ -41,31 +41,31 @@ export function _HomepageHero({
 _HomepageHero.defaultProps = {
   borderRadius: 10,
   clientWidth: 400,
-  color: "#fff",
-  locale: i18n.defaultLocale,
+  color: '#fff',
+  locale: i18n.defaultLocale
 }
 
 addPropertyControls(_HomepageHero, {
   borderRadius: {
-    title: "Border Radius",
+    title: 'Border Radius',
     type: ControlType.Number,
-    defaultValue: _HomepageHero.defaultProps.borderRadius,
+    defaultValue: _HomepageHero.defaultProps.borderRadius
   },
   clientWidth: {
-    title: "Client Width",
+    title: 'Client Width',
     type: ControlType.Number,
-    defaultValue: _HomepageHero.defaultProps.clientWidth,
+    defaultValue: _HomepageHero.defaultProps.clientWidth
   },
   color: {
-    title: "Text Color",
+    title: 'Text Color',
     type: ControlType.String,
-    defaultValue: _HomepageHero.defaultProps.color,
+    defaultValue: _HomepageHero.defaultProps.color
   },
   locale: {
-    title: "Locale",
+    title: 'Locale',
     type: ControlType.Enum,
     defaultValue: i18n.defaultLocale,
     options: i18n.localeCodes,
-    optionTitles: i18n.localeNames,
-  },
+    optionTitles: i18n.localeNames
+  }
 })

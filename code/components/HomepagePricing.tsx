@@ -1,10 +1,10 @@
-import { Frame } from "framer"
-import * as React from "react"
-import { useIntl } from "react-intl"
+import { Frame } from 'framer'
+import * as React from 'react'
+import { useIntl } from 'react-intl'
 
-import ErrorBoundaryText from "./ErrorBoundaryText"
+import ErrorBoundaryText from './ErrorBoundaryText'
 
-export function HomepagePricing(props) {
+export function HomepagePricing (props) {
   const intl = useIntl()
 
   return (
@@ -13,10 +13,10 @@ export function HomepagePricing(props) {
         background="transparent"
         style={{
           flex: 1,
-          width: "100%"
+          width: '100%'
         }}
       >
-        {intl.formatMessage({ id: "Homepage.Pricing" })}
+        {intl.formatMessage({ id: 'Homepage.Pricing' })}
       </Frame>
     </ErrorBoundaryText>
   )

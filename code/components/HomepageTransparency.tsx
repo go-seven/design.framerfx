@@ -1,8 +1,8 @@
-import * as React from "react"
-import { Frame } from "framer"
-import { useIntl } from "react-intl"
+import * as React from 'react'
+import { Frame } from 'framer'
+import { useIntl } from 'react-intl'
 
-export function HomepageTransparency() {
+export function HomepageTransparency () {
   const intl = useIntl()
 
   return (
@@ -11,10 +11,10 @@ export function HomepageTransparency() {
       color="#0F4194"
       style={{
         flex: 1,
-        width: "100%"
+        width: '100%'
       }}
     >
-      {intl.formatMessage({ id: "Homepage.Transparency" })}
+      {intl.formatMessage({ id: 'Homepage.Transparency' })}
     </Frame>
   )
 }

@@ -1,23 +1,23 @@
-import * as React from "react"
-import { Frame, Stack } from "framer"
-import { useIntl } from "react-intl"
+import * as React from 'react'
+import { Frame, Stack } from 'framer'
+import { useIntl } from 'react-intl'
 
-import { Logo } from "./Logo"
+import { Logo } from './Logo'
 
-export function HomepageHero({
+export function HomepageHero ({
   borderRadius,
   isMobile,
   color,
-  logoImage,
+  logoImage
 }) {
   const intl = useIntl()
 
   return (
     <Stack
       style={{
-        background: "linear-gradient(270deg, #1854a5 0%, #0c3d8d 100%)",
-        width: "100%",
-        height: "100%",
+        background: 'linear-gradient(270deg, #1854a5 0%, #0c3d8d 100%)',
+        width: '100%',
+        height: '100%'
       }}
     >
       <Frame
@@ -25,22 +25,22 @@ export function HomepageHero({
         background="transparent"
         style={{
           flex: isMobile ? 2 : 1,
-          width: "100%",
-          textTransform: "uppercase",
+          width: '100%',
+          textTransform: 'uppercase'
         }}
       >
         <Stack
-          direction={isMobile ? "vertical" : "horizontal"}
+          direction={isMobile ? 'vertical' : 'horizontal'}
           style={{
-            width: "100%",
-            height: "100%",
+            width: '100%',
+            height: '100%'
           }}
         >
           <Frame
             background="transparent"
             style={{
               flex: 1,
-              width: "100%"
+              width: '100%'
             }}
           >
             <Logo image={logoImage} />
@@ -50,49 +50,49 @@ export function HomepageHero({
             background="transparent"
             style={{
               flex: 2,
-              width: "100%"
+              width: '100%'
             }}
           >
             <Stack
-              direction={isMobile ? "vertical" : "horizontal"}
+              direction={isMobile ? 'vertical' : 'horizontal'}
               style={{
-                width: "100%",
-                height: "100%",
+                width: '100%',
+                height: '100%'
               }}
             >
               <Frame
                 background="transparent"
                 style={{
                   flex: 1,
-                  width: "100%"
+                  width: '100%'
                 }}
               >
-                {intl.formatMessage({ id: "Homepage.Features" })}
+                {intl.formatMessage({ id: 'Homepage.Features' })}
               </Frame>
 
               <Frame
                 background="transparent"
                 style={{
                   flex: 1,
-                  width: "100%"
+                  width: '100%'
                 }}
               >
-                {intl.formatMessage({ id: "Homepage.Pricing" })}
+                {intl.formatMessage({ id: 'Homepage.Pricing' })}
               </Frame>
 
               <Frame
                 background="transparent"
                 style={{
                   flex: 2,
-                  width: "100%"
+                  width: '100%'
                 }}
               >
                 <Stack
                   direction="horizontal"
                   style={{
-                    width: "100%",
-                    height: "100%",
-                    padding: "2rem",
+                    width: '100%',
+                    height: '100%',
+                    padding: '2rem'
                   }}
                 >
                   <Frame
@@ -101,10 +101,10 @@ export function HomepageHero({
                     color="#1a55a6"
                     style={{
                       flex: 1,
-                      height: "4rem",
+                      height: '4rem'
                     }}
                   >
-                    {intl.formatMessage({ id: "Authentication.Button.Enter" })}
+                    {intl.formatMessage({ id: 'Authentication.Button.Enter' })}
                   </Frame>
 
                   <Frame
@@ -113,10 +113,10 @@ export function HomepageHero({
                     color="#c7dcf3"
                     style={{
                       flex: 1,
-                      height: "4rem",
+                      height: '4rem'
                     }}
                   >
-                    {intl.formatMessage({ id: "Authentication.Button.Register" })}
+                    {intl.formatMessage({ id: 'Authentication.Button.Register' })}
                   </Frame>
                 </Stack>
               </Frame>
@@ -130,56 +130,56 @@ export function HomepageHero({
         color={color}
         style={{
           flex: 1,
-          width: "100%"
+          width: '100%'
         }}
       >
         <Stack
           style={{
-            width: "100%",
-            height: "100%",
-            padding: isMobile ? "0 2rem 0 2rem" : "0 4rem 0 4rem",
+            width: '100%',
+            height: '100%',
+            padding: isMobile ? '0 2rem 0 2rem' : '0 4rem 0 4rem',
             fontSize: isMobile ? 18 : 32,
-            fontWeight: 600,
+            fontWeight: 600
           }}
         >
           <Frame
             background="transparent"
-						style={{
-							flex: 1,
-							width: "100%",
-						}}
+            style={{
+              flex: 1,
+              width: '100%'
+            }}
           />
 
           <Frame
             background="transparent"
-						style={{
-							flex: 1,
-							width: "100%",
-						}}
+            style={{
+              flex: 1,
+              width: '100%'
+            }}
           >
             <span>
-              {intl.formatMessage({ id: "Homepage.Hero.Tagline1" })}
+              {intl.formatMessage({ id: 'Homepage.Hero.Tagline1' })}
             </span>
           </Frame>
 
           <Frame
             background="transparent"
-						style={{
-							flex: 1,
-							width: "100%",
-						}}
+            style={{
+              flex: 1,
+              width: '100%'
+            }}
           >
             <span>
-              {intl.formatMessage({ id: "Homepage.Hero.Tagline2" })}
+              {intl.formatMessage({ id: 'Homepage.Hero.Tagline2' })}
             </span>
           </Frame>
 
           <Frame
             background="transparent"
-						style={{
-							flex: 1,
-							width: "100%",
-						}}
+            style={{
+              flex: 1,
+              width: '100%'
+            }}
           />
         </Stack>
       </Frame>
@@ -189,26 +189,26 @@ export function HomepageHero({
         color={color}
         style={{
           flex: 1,
-          width: "100%",
-          fontSize: isMobile ? 18 : 32,
+          width: '100%',
+          fontSize: isMobile ? 18 : 32
         }}
       >
         <Stack
           style={{
-            width: "100%",
-            height: "100%",
-            padding: isMobile ? "0 2rem 0 2rem" : "0 4rem 0 4rem",
+            width: '100%',
+            height: '100%',
+            padding: isMobile ? '0 2rem 0 2rem' : '0 4rem 0 4rem'
           }}
         >
           <Frame
             background="transparent"
-						style={{
-							flex: 1,
-							width: "100%",
-						}}
+            style={{
+              flex: 1,
+              width: '100%'
+            }}
           >
             <span>
-              {intl.formatMessage({ id: "Homepage.Hero.Welcome" })}
+              {intl.formatMessage({ id: 'Homepage.Hero.Welcome' })}
             </span>
           </Frame>
         </Stack>

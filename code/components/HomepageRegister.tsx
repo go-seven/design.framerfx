@@ -1,14 +1,14 @@
-import * as React from "react"
-import { Frame } from "framer"
+import * as React from 'react'
+import { Frame } from 'framer'
 
-export function HomepageRegister() {
+export function HomepageRegister () {
   return (
     <Frame
       backgroundColor="#1854A5"
       color="#fff"
       style={{
         flex: 1,
-        width: "100%"
+        width: '100%'
       }}
     >
       Register

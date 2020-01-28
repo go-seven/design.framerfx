@@ -1,12 +1,12 @@
-import { addPropertyControls, ControlType, Frame } from "framer"
-import * as React from "react"
-import { IntlProvider } from "react-intl"
+import { addPropertyControls, ControlType, Frame } from 'framer'
+import * as React from 'react'
+import { IntlProvider } from 'react-intl'
 
-import { HomepageTransparency } from "./components/HomepageTransparency"
+import { HomepageTransparency } from './components/HomepageTransparency'
 
-import * as i18n from "./i18n/"
+import * as i18n from './i18n/'
 
-export function _HomepageTransparency({
+export function _HomepageTransparency ({
   locale,
   ...props
 }) {
@@ -23,15 +23,15 @@ export function _HomepageTransparency({
 }
 
 _HomepageTransparency.defaultProps = {
-  locale: i18n.defaultLocale,
+  locale: i18n.defaultLocale
 }
 
 addPropertyControls(_HomepageTransparency, {
   locale: {
-    title: "Locale",
+    title: 'Locale',
     type: ControlType.Enum,
     defaultValue: i18n.defaultLocale,
     options: i18n.localeCodes,
-    optionTitles: i18n.localeNames,
-  },
+    optionTitles: i18n.localeNames
+  }
 })

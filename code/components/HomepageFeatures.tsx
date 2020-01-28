@@ -1,10 +1,10 @@
-import * as React from "react"
-import { Frame } from "framer"
-import { useIntl } from "react-intl"
+import * as React from 'react'
+import { Frame } from 'framer'
+import { useIntl } from 'react-intl'
 
-import ErrorBoundaryText from "./ErrorBoundaryText"
+import ErrorBoundaryText from './ErrorBoundaryText'
 
-export function HomepageFeatures() {
+export function HomepageFeatures () {
   const intl = useIntl()
 
   return (
@@ -13,10 +13,10 @@ export function HomepageFeatures() {
         background="transparent"
         style={{
           flex: 1,
-          width: "100%"
+          width: '100%'
         }}
       >
-        {intl.formatMessage({ id: "Homepage.Features" })}
+        {intl.formatMessage({ id: 'Homepage.Features' })}
       </Frame>
     </ErrorBoundaryText>
   )

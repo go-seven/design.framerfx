@@ -26,7 +26,7 @@
               "borderRadius" : 10,
               "clientWidth" : 1440,
               "color" : "#fff",
-              "locale" : "en"
+              "locale" : "it"
             },
             "codeOverrideEnabled" : false,
             "constraintsLocked" : false,
@@ -156,7 +156,7 @@
               "borderRadius" : 10,
               "clientWidth" : 375,
               "color" : "#fff",
-              "locale" : "en"
+              "locale" : "it"
             },
             "codeOverrideEnabled" : false,
             "constraintsLocked" : false,
@@ -777,7 +777,7 @@
             "clip" : true,
             "codeComponentIdentifier" : ".\/_HomepageFeatures.tsx__HomepageFeatures",
             "codeComponentProps" : {
-              "locale" : "it"
+              "locale" : "en"
             },
             "codeOverrideEnabled" : false,
             "constraintsLocked" : false,
@@ -831,7 +831,7 @@
             "clip" : true,
             "codeComponentIdentifier" : ".\/_HomepageRegister.tsx__HomepageRegister",
             "codeComponentProps" : {
-
+              "locale" : "en"
             },
             "codeOverrideEnabled" : false,
             "constraintsLocked" : false,
@@ -885,7 +885,7 @@
             "clip" : true,
             "codeComponentIdentifier" : ".\/_HomepageTransparency.tsx__HomepageTransparency",
             "codeComponentProps" : {
-
+              "locale" : "en"
             },
             "codeOverrideEnabled" : false,
             "constraintsLocked" : false,

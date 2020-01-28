@@ -1,12 +1,12 @@
-import { addPropertyControls, ControlType, Frame } from "framer"
-import * as React from "react"
-import { IntlProvider } from "react-intl"
+import { addPropertyControls, ControlType, Frame } from 'framer'
+import * as React from 'react'
+import { IntlProvider } from 'react-intl'
 
-import { HomepageRegister } from "./components/HomepageRegister"
+import { HomepageRegister } from './components/HomepageRegister'
 
-import * as i18n from "./i18n/"
+import * as i18n from './i18n/'
 
-export function _HomepageRegister({
+export function _HomepageRegister ({
   locale,
   ...props
 }) {
@@ -23,15 +23,15 @@ export function _HomepageRegister({
 }
 
 _HomepageRegister.defaultProps = {
-  locale: i18n.defaultLocale,
+  locale: i18n.defaultLocale
 }
 
 addPropertyControls(_HomepageRegister, {
   locale: {
-    title: "Locale",
+    title: 'Locale',
     type: ControlType.Enum,
     defaultValue: i18n.defaultLocale,
     options: i18n.localeCodes,
-    optionTitles: i18n.localeNames,
-  },
+    optionTitles: i18n.localeNames
+  }
 })

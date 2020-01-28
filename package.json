@@ -3,6 +3,7 @@
 	"name": "go-seven-design.framerfx",
 	"private": true,
 	"scripts": {
+		"eslint": " eslint --ext .js,.ts,.tsx .",
 		"i18n": "cpy node_modules/go-seven-i18n/dist/* code/i18n/",
 		"postsass:fonts": "cpy node_modules/go-seven-assets/fonts/* fonts/",
 		"sass": "run-p sass:*",
@@ -11,9 +12,23 @@
 	},
 	"devDependencies": {
 		"@types/react": "^16.8",
+		"@typescript-eslint/eslint-plugin": "^2.18.0",
 		"cpy-cli": "^3.0.0",
-		"npm-run-all": "^4.1.5"
+		"eslint": "^6.8.0",
+		"eslint-config-standard-with-typescript": "^12.0.1",
+		"eslint-plugin-import": "^2.20.0",
+		"eslint-plugin-node": "^11.0.0",
+		"eslint-plugin-promise": "^4.2.1",
+		"eslint-plugin-standard": "^4.0.1",
+		"node-sass": "^4.13.1",
+		"npm-run-all": "^4.1.5",
+		"pre-commit": "^1.2.2",
+		"react-intl": "^3.11.0",
+		"typescript": "^3.7.5"
 	},
+  "pre-commit": [
+    "eslint"
+  ],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/go-seven/design.framerfx.git"
@@ -31,8 +46,6 @@
 	"dependencies": {
 		"go-seven-assets": "github:go-seven/assets",
 		"go-seven-i18n": "github:go-seven/i18n",
-		"node-sass": "^4.13.1",
-		"react-intl": "^3.11.0",
 		"trunx": "^0.28.0"
 	}
 }

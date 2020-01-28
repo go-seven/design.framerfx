@@ -1,5 +1,5 @@
-import { Frame } from "framer"
-import * as React from "react"
+import { Frame } from 'framer'
+import * as React from 'react'
 
 interface ErrorBoundaryTextProps {
   children: React.ReactNode
@@ -9,11 +9,11 @@ interface ErrorBoundaryTextProps {
 export default class ErrorBoundaryText extends React.Component<ErrorBoundaryTextProps> {
   state = { hasError: false }
 
-  static getDerivedStateFromError(error) {
+  static getDerivedStateFromError () {
     return { hasError: true }
   }
 
-  render() {
+  render () {
     if (this.state.hasError) {
       return <Frame>{this.props.message}</Frame>
     }
