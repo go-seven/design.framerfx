@@ -1,7 +1,9 @@
 {
-	"license": "MIT",
-	"name": "go-seven-design.framerfx",
+	"name": "go-seven-design",
+	"author": "Gianluca Casati",
+	"version": "1.0.0",
 	"private": true,
+	"license": "MIT",
 	"scripts": {
 		"eslint": " eslint --ext .js,.ts,.tsx .",
 		"i18n": "cpy node_modules/go-seven-i18n/dist/* code/i18n/",
@@ -41,8 +43,6 @@
 		"displayName": "Go Seven",
 		"id": "cbbc74d0-273a-495e-8aff-01109bb3907e"
 	},
-	"author": "Gianluca Casati",
-	"version": "1.0.0",
 	"dependencies": {
 		"go-seven-assets": "github:go-seven/assets",
 		"go-seven-i18n": "github:go-seven/i18n",
