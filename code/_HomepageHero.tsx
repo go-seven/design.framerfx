@@ -7,8 +7,6 @@ import {
 } from 'framer'
 import { IntlProvider } from 'react-intl'
 
-import { mobile } from './breakpoints'
-
 import { HomepageHero } from './components/HomepageHero'
 
 import * as i18n from './i18n/'
@@ -19,8 +17,10 @@ import * as propertyControl from './propertyControls'
 // resize must be implemented in the actual container, document an example.
 export function _HomepageHero ({
   borderRadius,
+  clientHeight,
   clientWidth,
   color,
+  contentOffsetY,
   locale,
   ...props
 }) {
@@ -34,8 +34,10 @@ export function _HomepageHero ({
       <Frame {...props}>
         <HomepageHero
           borderRadius={borderRadius}
+          clientHeight={clientHeight}
+          clientWidth={clientWidth}
           color={color}
-          isMobile={clientWidth <= mobile}
+          contentOffsetY={contentOffsetY}
           logoImage={url('./node_modules/go-seven-assets/images/logotype.png')}
           onClickEnter={Function.prototype}
           onClickRegister={Function.prototype}
@@ -47,6 +49,7 @@ export function _HomepageHero ({
 
 _HomepageHero.defaultProps = {
   borderRadius: 10,
+  clientHeight: 400,
   clientWidth: 400,
   color: '#fff',
   locale: i18n.defaultLocale
@@ -58,11 +61,12 @@ addPropertyControls(_HomepageHero, {
     type: ControlType.Number,
     defaultValue: _HomepageHero.defaultProps.borderRadius
   },
-  clientWidth: {
-    title: 'Client Width',
+  clientHeight: {
+    title: 'Client Height',
     type: ControlType.Number,
-    defaultValue: _HomepageHero.defaultProps.clientWidth
+    defaultValue: _HomepageHero.defaultProps.clientHeight,
   },
+  clientWidth: propertyControl.clientWidth(_HomepageHero.defaultProps.clientWidth),
   color: {
     title: 'Text Color',
     type: ControlType.String,

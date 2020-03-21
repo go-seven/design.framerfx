@@ -13,6 +13,8 @@
 		"sass:fonts": "node-sass --output-style compact --include-path node_modules node_modules/go-seven-assets/css/lato-latin.css > code/fonts.css"
 	},
 	"devDependencies": {
+		"@framer/framer.device-skin-apple-iphone-xs-silver": "^1.0.0",
+		"@framer/framer.device-skin-apple-macbook-pro": "^1.0.0",
 		"@types/react": "^16.8",
 		"@typescript-eslint/eslint-plugin": "^2.18.0",
 		"cpy-cli": "^3.0.0",

@@ -10,7 +10,7 @@ import {
   Span
 } from 'trunx'
 
-export default function EmailField ({
+export function EmailField ({
   errorMessage = '',
   inputRef
 }) {

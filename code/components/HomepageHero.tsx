@@ -2,17 +2,23 @@ import * as React from 'react'
 import { Frame, Stack } from 'framer'
 import { useIntl } from 'react-intl'
 
+import { mobile } from './breakpoints'
+
 import { Logo } from './Logo'
 
 export function HomepageHero ({
   borderRadius,
   color,
+  contentOffsetY,
+  clientHeight,
+  clientWidth,
   logoImage,
-  isMobile,
   onClickEnter,
   onClickRegister,
 }) {
   const intl = useIntl()
+
+  const isMobile = clientWidth <= mobile
 
   return (
     <Stack
@@ -23,6 +29,7 @@ export function HomepageHero ({
       }}
     >
       <Frame
+        animate={(Math.abs(contentOffsetY) > (clientHeight / 6)) ? { opacity: 0 } : { opacity: 1 } }
         color={color}
         background="transparent"
         style={{

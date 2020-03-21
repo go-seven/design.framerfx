@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Frame } from 'framer'
 import { useIntl } from 'react-intl'
 
-import ErrorBoundaryText from './ErrorBoundaryText'
+import { ErrorBoundaryText } from './ErrorBoundaryText'
 
 export function HomepageFeatures () {
   const intl = useIntl()

@@ -49,6 +49,16 @@
   resolved "https://registry.yarnpkg.com/@formatjs/macro/-/macro-0.2.6.tgz#eb173658d803416a43210778b2f5c04c5a240bb6"
   integrity sha512-DfdnLJf8+PwLHzJECZ1Xfa8+sI9akQnUuLN2UdkaExTQmlY0Vs36rMzEP0JoVDBMk+KdQbJNt72rPeZkBNcKWg==
 
+"@framer/framer.device-skin-apple-iphone-xs-silver@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.framer.com/@framer/framer.device-skin-apple-iphone-xs-silver/-/@framer/framer.device-skin-apple-iphone-xs-silver-1.0.0.tgz#2325c3b087d646ec6de446d48e632c841b56d9c1"
+  integrity sha512-jA5mpi38Bn7//J3q8NLctiAvByw82LBGUEhgtt4SP+L3DBDqb8qn89kAcF49hZutaTHtMotIli4cE/bHOSY7vg==
+
+"@framer/framer.device-skin-apple-macbook-pro@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.framer.com/@framer/framer.device-skin-apple-macbook-pro/-/@framer/framer.device-skin-apple-macbook-pro-1.0.0.tgz#f0cc7929caf6d093b450b48f13bfd8f5a36b7233"
+  integrity sha512-TV/jUjuzHT6zzzpPygLXP1WJkhZJqFbxGgEpy4KgzLwaBXSrCQYkpxhjAAgECA1lct8WUhwDtZ57zlM1S0xGkQ==
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"

@@ -2,7 +2,7 @@ import { Frame } from 'framer'
 import * as React from 'react'
 import { FormattedMessage } from 'react-intl'
 
-import ErrorBoundaryText from './ErrorBoundaryText'
+import { ErrorBoundaryText } from './ErrorBoundaryText'
 
 // TODO use this wrapper for the whole homepage
 export function Homepage () {

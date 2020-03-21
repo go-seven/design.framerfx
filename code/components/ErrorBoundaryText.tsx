@@ -6,7 +6,7 @@ interface ErrorBoundaryTextProps {
   message: String
 }
 
-export default class ErrorBoundaryText extends React.Component<ErrorBoundaryTextProps> {
+export class ErrorBoundaryText extends React.Component<ErrorBoundaryTextProps> {
   state = { hasError: false }
 
   static getDerivedStateFromError () {
