@@ -5,6 +5,7 @@ import { IntlProvider } from 'react-intl'
 import { HomepageRegister } from './components/HomepageRegister'
 
 import * as i18n from './i18n/'
+import * as propertyControl from './propertyControls'
 
 export function _HomepageRegister ({
   locale,
@@ -27,11 +28,5 @@ _HomepageRegister.defaultProps = {
 }
 
 addPropertyControls(_HomepageRegister, {
-  locale: {
-    title: 'Locale',
-    type: ControlType.Enum,
-    defaultValue: i18n.defaultLocale,
-    options: i18n.localeCodes,
-    optionTitles: i18n.localeNames
-  }
+  locale: propertyControl.locale(),
 })

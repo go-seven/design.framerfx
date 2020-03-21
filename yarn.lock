@@ -1109,6 +1109,11 @@ extsprintf@^1.2.0:
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.4.0.tgz#e2689f8f356fad62cca65a3a91c5df5f9551692f"
   integrity sha1-4mifjzVvrWLMplo6kcXfX5VRaS8=
 
+fa-svg-icon@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/fa-svg-icon/-/fa-svg-icon-0.3.0.tgz#0868608cdd4636c879f24d6bc8cecae85b00583e"
+  integrity sha512-Jl17nBaIszbV/V4FfnMpDa7BcOUtvAXCNbWRCXXXzsge5sOnYAyhgrCbOlPCWqO3WVhMBJ7cySX/dXtWZ9EKmQ==
+
 fast-deep-equal@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.1.tgz#545145077c501491e33b15ec408c294376e94ae4"

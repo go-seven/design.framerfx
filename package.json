@@ -5,7 +5,7 @@
 	"private": true,
 	"license": "MIT",
 	"scripts": {
-		"eslint": " eslint --ext .js,.ts,.tsx .",
+		"eslint": " eslint --fix --ext .js,.ts,.tsx .",
 		"i18n": "cpy node_modules/go-seven-i18n/dist/* code/i18n/",
 		"postsass:fonts": "cpy node_modules/go-seven-assets/fonts/* fonts/",
 		"sass": "run-p sass:*",
@@ -25,7 +25,6 @@
 		"node-sass": "^4.13.1",
 		"npm-run-all": "^4.1.5",
 		"pre-commit": "^1.2.2",
-		"react-intl": "^3.11.0",
 		"typescript": "^3.7.5"
 	},
 	"pre-commit": [
@@ -44,8 +43,10 @@
 		"id": "cbbc74d0-273a-495e-8aff-01109bb3907e"
 	},
 	"dependencies": {
+		"fa-svg-icon": "^0.3.0",
 		"go-seven-assets": "github:go-seven/assets",
 		"go-seven-i18n": "github:go-seven/i18n",
+		"react-intl": "^3.11.0",
 		"trunx": "^0.28.0"
 	}
 }

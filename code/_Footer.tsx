@@ -2,13 +2,15 @@ import * as React from 'react'
 import { addPropertyControls, Frame } from 'framer'
 import { IntlProvider } from 'react-intl'
 
-import { HomepageFeatures } from './components/HomepageFeatures'
+import { Footer } from './components/Footer'
 
 import * as i18n from './i18n/'
 import * as propertyControl from './propertyControls'
 
-export function _HomepageFeatures (props) {
-  const { locale } = props
+export function _Footer ({
+  locale,
+  ...props
+}) {
   const localeConfig = i18n.config[locale]
 
   return (
@@ -16,15 +18,15 @@ export function _HomepageFeatures (props) {
       defaultLocale={i18n.defaultLocale}
       {...localeConfig}
     >
-      <HomepageFeatures />
+      <Footer />
     </IntlProvider>
   )
 }
 
-_HomepageFeatures.defaultProps = {
+_Footer.defaultProps = {
   locale: i18n.defaultLocale
 }
 
-addPropertyControls(_HomepageFeatures, {
+addPropertyControls(_Footer, {
   locale: propertyControl.locale(),
 })

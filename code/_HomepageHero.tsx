@@ -1,6 +1,10 @@
 import { url } from 'framer/resource'
 import * as React from 'react'
-import { addPropertyControls, ControlType, Frame } from 'framer'
+import {
+  addPropertyControls,
+  ControlType,
+  Frame,
+} from 'framer'
 import { IntlProvider } from 'react-intl'
 
 import { mobile } from './breakpoints'
@@ -8,6 +12,7 @@ import { mobile } from './breakpoints'
 import { HomepageHero } from './components/HomepageHero'
 
 import * as i18n from './i18n/'
+import * as propertyControl from './propertyControls'
 
 // TODO resize handler, see for example:
 // https://gist.github.com/steveruizok/b9ff0a24a735f37c16794bc27da36164
@@ -63,11 +68,5 @@ addPropertyControls(_HomepageHero, {
     type: ControlType.String,
     defaultValue: _HomepageHero.defaultProps.color
   },
-  locale: {
-    title: 'Locale',
-    type: ControlType.Enum,
-    defaultValue: i18n.defaultLocale,
-    options: i18n.localeCodes,
-    optionTitles: i18n.localeNames
-  }
+  locale: propertyControl.locale(),
 })
