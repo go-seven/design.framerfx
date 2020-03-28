@@ -1,14 +1,15 @@
-import * as React from 'react'
 import { Frame, Stack } from 'framer'
+import * as React from 'react'
 import { useIntl } from 'react-intl'
 
 import i18nId from '../i18n/messageIds'
 
 import { mobile } from './breakpoints'
 
+import { FirstPage } from './FirstPage'
 import { Logo } from './Logo'
 
-export function HomePageHero({
+export function HomePageHero ({
   borderRadius,
   color,
   contentOffsetY,
@@ -23,13 +24,7 @@ export function HomePageHero({
   const isMobile = clientWidth <= mobile
 
   return (
-    <Stack
-      style={{
-        background: 'linear-gradient(270deg, #1854a5 0%, #0c3d8d 100%)',
-        width: '100%',
-        height: '100%'
-      }}
-    >
+    <FirstPage>
       <Frame
         animate={(Math.abs(contentOffsetY) > (clientHeight / 6)) ? { opacity: 0 } : { opacity: 1 }}
         color={color}
@@ -78,7 +73,7 @@ export function HomePageHero({
                   width: '100%'
                 }}
               >
-                {intl.formatMessage({ id: i18nId.HomePage.Features.title })}
+                {intl.formatMessage({ id: i18nId.homePage.features.title })}
               </Frame>
 
               <Frame
@@ -88,7 +83,7 @@ export function HomePageHero({
                   width: '100%'
                 }}
               >
-                {intl.formatMessage({ id: i18nId.HomePage.Pricing.title })}
+                {intl.formatMessage({ id: i18nId.homePage.pricing.title })}
               </Frame>
 
               <Frame
@@ -116,7 +111,7 @@ export function HomePageHero({
                       height: '4rem'
                     }}
                   >
-                    {intl.formatMessage({ id: i18nId.Authentication.Action.Enter })}
+                    {intl.formatMessage({ id: i18nId.authentication.action.enter })}
                   </Frame>
 
                   <Frame
@@ -129,7 +124,7 @@ export function HomePageHero({
                       height: '4rem'
                     }}
                   >
-                    {intl.formatMessage({ id: i18nId.Authentication.Action.Register })}
+                    {intl.formatMessage({ id: i18nId.authentication.action.register })}
                   </Frame>
                 </Stack>
               </Frame>
@@ -171,7 +166,7 @@ export function HomePageHero({
             }}
           >
             <span>
-              {intl.formatMessage({ id: 'Homepage.Hero.Tagline1' })}
+              {intl.formatMessage({ id: i18nId.homePage.hero.tagline1 })}
             </span>
           </Frame>
 
@@ -183,7 +178,7 @@ export function HomePageHero({
             }}
           >
             <span>
-              {intl.formatMessage({ id: 'Homepage.Hero.Tagline2' })}
+              {intl.formatMessage({ id: i18nId.homePage.hero.tagline2 })}
             </span>
           </Frame>
 
@@ -221,11 +216,11 @@ export function HomePageHero({
             }}
           >
             <span>
-              {intl.formatMessage({ id: i18nId.HomePage.Hero.welcome })}
+              {intl.formatMessage({ id: i18nId.homePage.hero.welcome })}
             </span>
           </Frame>
         </Stack>
       </Frame>
-    </Stack>
+    </FirstPage>
   )
 }

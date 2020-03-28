@@ -16,7 +16,7 @@ export function HomePageRegister () {
         width: '100%'
       }}
     >
-      {intl.formatMessage({ id: i18nId.Authentication.Action.Register })}
+      {intl.formatMessage({ id: i18nId.authentication.action.register })}
     </Frame>
   )
 }

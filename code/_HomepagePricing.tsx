@@ -6,6 +6,8 @@ import { HomePagePricing } from './components/HomePagePricing'
 
 import * as i18n from './i18n/'
 
+import * as propertyControl from './propertyControls'
+
 export function _HomePagePricing ({
   locale,
   ...props
@@ -27,11 +29,5 @@ _HomePagePricing.defaultProps = {
 }
 
 addPropertyControls(_HomePagePricing, {
-  locale: {
-    title: 'Locale',
-    type: ControlType.Enum,
-    defaultValue: i18n.defaultLocale,
-    options: i18n.localeCodes,
-    optionTitles: i18n.localeNames
-  }
+  locale: propertyControl.locale(),
 })

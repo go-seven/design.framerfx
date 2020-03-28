@@ -1,15 +1,18 @@
 import { url } from 'framer/resource'
-import * as React from 'react'
 import {
   addPropertyControls,
   ControlType,
   Frame,
 } from 'framer'
+import * as React from 'react'
 import { IntlProvider } from 'react-intl'
+
+import * as asset from './assets'
 
 import { HomePageHero } from './components/HomePageHero'
 
 import * as i18n from './i18n/'
+
 import * as propertyControl from './propertyControls'
 
 // TODO resize handler, see for example:
@@ -38,7 +41,7 @@ export function _HomePageHero ({
           clientWidth={clientWidth}
           color={color}
           contentOffsetY={contentOffsetY}
-          logoImage={url('./node_modules/go-seven-assets/images/logotype.png')}
+          logoImage={asset.logoImage}
           onClickEnter={Function.prototype}
           onClickRegister={Function.prototype}
         />
@@ -61,11 +64,7 @@ addPropertyControls(_HomePageHero, {
     type: ControlType.Number,
     defaultValue: _HomePageHero.defaultProps.borderRadius
   },
-  clientHeight: {
-    title: 'Client Height',
-    type: ControlType.Number,
-    defaultValue: _HomePageHero.defaultProps.clientHeight,
-  },
+  clientHeight: propertyControl.clientHeight(_HomePageHero.defaultProps.clientHeight),
   clientWidth: propertyControl.clientWidth(_HomePageHero.defaultProps.clientWidth),
   color: {
     title: 'Text Color',

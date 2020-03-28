@@ -1,5 +1,5 @@
-import * as React from 'react'
 import { Frame } from 'framer'
+import * as React from 'react'
 
 export function Footer () {
   return (

@@ -54,6 +54,11 @@
   resolved "https://registry.framer.com/@framer/framer.device-skin-apple-iphone-xs-silver/-/@framer/framer.device-skin-apple-iphone-xs-silver-1.0.0.tgz#2325c3b087d646ec6de446d48e632c841b56d9c1"
   integrity sha512-jA5mpi38Bn7//J3q8NLctiAvByw82LBGUEhgtt4SP+L3DBDqb8qn89kAcF49hZutaTHtMotIli4cE/bHOSY7vg==
 
+"@framer/framer.device-skin-apple-iphone-xs-spacegrey@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.framer.com/@framer/framer.device-skin-apple-iphone-xs-spacegrey/-/@framer/framer.device-skin-apple-iphone-xs-spacegrey-1.0.0.tgz#d9f524f5a6a4afe8cb413c00f3f16fe4d52ee09e"
+  integrity sha512-BWmGnCvnPmYel3ytJ1eiNxugHTj3e7eiih8L1b3RZtB4ZjgF6HiCMp+nsB0wAOJrMS2sA+fEYMDzxqybX9Dukg==
+
 "@framer/framer.device-skin-apple-macbook-pro@^1.0.0":
   version "1.0.0"
   resolved "https://registry.framer.com/@framer/framer.device-skin-apple-macbook-pro/-/@framer/framer.device-skin-apple-macbook-pro-1.0.0.tgz#f0cc7929caf6d093b450b48f13bfd8f5a36b7233"
@@ -2480,6 +2485,11 @@ path-type@^3.0.0:
   integrity sha512-T2ZUsdZFHgA3u4e5PfPbjd7HDDpxPnQb5jN0SrDsjNSuVXHJqtwTnWqG0B1jZrgmJ/7lj1EmVIByWt1gxGkWvg==
   dependencies:
     pify "^3.0.0"
+
+pdsp@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/pdsp/-/pdsp-0.1.0.tgz#dfb60aaf62549c2f1eab54a9cad99a03f3b46caf"
+  integrity sha512-V+6cO38B3/jmmoqypOfXPsuVfiyQkABb569e2Seta3flaqTS86LAjHn7q05J4p1A5xdZIK92+HVwcUnIlcKDUg==
 
 performance-now@^2.1.0:
   version "2.1.0"

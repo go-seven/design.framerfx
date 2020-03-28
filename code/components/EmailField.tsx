@@ -12,8 +12,9 @@ import {
 
 export function EmailField ({
   errorMessage = '',
-  inputRef,
-  label
+  label,
+  email,
+  setEmail,
 }) {
   return (
     <Field>
@@ -21,10 +22,11 @@ export function EmailField ({
 
       <Control hasIconsLeft>
         <Input
-          inputRef={inputRef}
           isDanger={Boolean(errorMessage)}
+          onChange={(event) => setEmail(event.target.value)}
           required
           type="email"
+          value={email}
         />
 
         <Icon hasTextGrey isLeft>

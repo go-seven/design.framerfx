@@ -6,7 +6,7 @@ import i18nId from '../i18n/messageIds'
 
 import { ErrorBoundaryText } from './ErrorBoundaryText'
 
-export function HomePageFeatures() {
+export function HomePageFeatures () {
   const intl = useIntl()
 
   return (
@@ -18,7 +18,7 @@ export function HomePageFeatures() {
           width: '100%'
         }}
       >
-        {intl.formatMessage({ id: i18nId.HomePage.Features.title })}
+        {intl.formatMessage({ id: i18nId.homePage.features.title })}
       </Frame>
     </ErrorBoundaryText>
   )

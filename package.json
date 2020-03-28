@@ -5,7 +5,7 @@
 	"private": true,
 	"license": "MIT",
 	"scripts": {
-		"eslint": " eslint --fix --ext .js,.ts,.tsx .",
+		"eslint": " eslint --ext .js,.ts,.tsx .",
 		"i18n": "cpy node_modules/go-seven-i18n/dist/* code/i18n/",
 		"postsass:fonts": "cpy node_modules/go-seven-assets/fonts/* fonts/",
 		"sass": "run-p sass:*",
@@ -14,6 +14,7 @@
 	},
 	"devDependencies": {
 		"@framer/framer.device-skin-apple-iphone-xs-silver": "^1.0.0",
+		"@framer/framer.device-skin-apple-iphone-xs-spacegrey": "^1.0.0",
 		"@framer/framer.device-skin-apple-macbook-pro": "^1.0.0",
 		"@types/react": "^16.8",
 		"@typescript-eslint/eslint-plugin": "^2.18.0",
@@ -48,6 +49,7 @@
 		"fa-svg-icon": "^0.3.0",
 		"go-seven-assets": "github:go-seven/assets",
 		"go-seven-i18n": "github:go-seven/i18n",
+		"pdsp": "^0.1.0",
 		"react-intl": "^3.11.0",
 		"trunx": "^0.28.0"
 	}

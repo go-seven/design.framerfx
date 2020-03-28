@@ -389,6 +389,154 @@
         "blendingEnabled" : 0,
         "blendingMode" : "normal",
         "bottom" : null,
+        "centerAnchorX" : 0.5,
+        "centerAnchorY" : 0.031073446327683617,
+        "children" : [
+
+        ],
+        "clip" : false,
+        "codeOverrideEnabled" : false,
+        "constraintsLocked" : false,
+        "deviceType" : null,
+        "exportOptions" : [
+
+        ],
+        "fillColor" : "#121212",
+        "fillEnabled" : true,
+        "fillImage" : null,
+        "fillImageOriginalName" : null,
+        "fillImagePixelHeight" : null,
+        "fillImagePixelWidth" : null,
+        "fillImageResize" : "fill",
+        "fillType" : "color",
+        "guidesX" : [
+
+        ],
+        "guidesY" : [
+
+        ],
+        "height" : 165,
+        "heightType" : 0,
+        "id" : "GddVB48fh",
+        "intrinsicHeight" : null,
+        "intrinsicWidth" : null,
+        "isExternalMaster" : null,
+        "isMaster" : false,
+        "isTarget" : false,
+        "left" : 16145,
+        "locked" : false,
+        "name" : "EnterPage EnterAccountForm Level",
+        "navigationTarget" : null,
+        "navigationTransition" : "push",
+        "navigationTransitionBackdropColor" : "rgba(4,4,15,.4)",
+        "navigationTransitionDirection" : "left",
+        "opacity" : 1,
+        "originalid" : "Kto9S1pli",
+        "parentid" : "ncneL9a4_",
+        "previewSettings" : null,
+        "radius" : 0,
+        "radiusBottomLeft" : 0,
+        "radiusBottomRight" : 0,
+        "radiusIsRelative" : false,
+        "radiusPerCorner" : false,
+        "radiusTopLeft" : 0,
+        "radiusTopRight" : 0,
+        "replicaInfo" : {
+          "master" : "Kto9S1pli",
+          "overrides" : {
+            "b8Pt95_v0" : {
+              "centerAnchorX" : 0.52500000000000002,
+              "centerAnchorY" : 0.50303030303030305,
+              "styledText" : {
+                "__class" : "StyledTextDraft",
+                "blocks" : [
+                  {
+                    "data" : {
+                      "emptyStyle" : [
+                        "FONT:__SystemDefault-400-normal__",
+                        "COLOR:#eee",
+                        "LINEHEIGHT:1.2",
+                        "SIZE:85",
+                        "LETTERSPACING:4"
+                      ]
+                    },
+                    "depth" : 0,
+                    "entityRanges" : [
+
+                    ],
+                    "inlineStyleRanges" : [
+                      {
+                        "length" : 16,
+                        "offset" : 0,
+                        "style" : "FONT:__SystemDefault-400-normal__"
+                      },
+                      {
+                        "length" : 16,
+                        "offset" : 0,
+                        "style" : "COLOR:#eee"
+                      },
+                      {
+                        "length" : 16,
+                        "offset" : 0,
+                        "style" : "LINEHEIGHT:1.2"
+                      },
+                      {
+                        "length" : 16,
+                        "offset" : 0,
+                        "style" : "SIZE:85"
+                      },
+                      {
+                        "length" : 16,
+                        "offset" : 0,
+                        "style" : "LETTERSPACING:4"
+                      }
+                    ],
+                    "key" : "3g57g",
+                    "text" : "EnterAccountForm",
+                    "type" : "unstyled"
+                  }
+                ],
+                "cached" : {
+                  "html" : "<div data-offset-key=\"3g57g-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"3g57g-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, serif;-webkit-text-fill-color:#eee;font-size:85px;letter-spacing:4px;line-height:1.2\"><span data-text=\"true\">EnterAccountForm<\/span><\/span><\/div>",
+                  "os" : "macos 10_15 framerx",
+                  "size" : {
+                    "height" : 102,
+                    "width" : 732
+                  },
+                  "width" : 0
+                },
+                "entityMap" : {
+
+                }
+              },
+              "width" : 732
+            },
+            "Kto9S1pli" : {
+              "blendingMode" : "normal",
+              "bottom" : null,
+              "centerAnchorX" : 0.5,
+              "centerAnchorY" : 0.031073446327683617,
+              "left" : 16145,
+              "name" : "EnterPage EnterAccountForm Level",
+              "right" : null,
+              "top" : -461,
+              "width" : 2280
+            }
+          }
+        },
+        "right" : null,
+        "rotation" : 0,
+        "top" : -461,
+        "visible" : true,
+        "width" : 2280,
+        "widthType" : 0
+      },
+      {
+        "__class" : "FrameNode",
+        "aspectRatio" : null,
+        "blendingEnabled" : 0,
+        "blendingMode" : "normal",
+        "bottom" : null,
         "centerAnchorX" : 0.49282603125800667,
         "centerAnchorY" : 0.031849012090828667,
         "children" : [
@@ -1532,6 +1680,163 @@
               "centerAnchorY" : 0.034464887276496499,
               "left" : 6207,
               "name" : "HomePage Level",
+              "right" : null,
+              "top" : -1204,
+              "width" : 9838,
+              "widthType" : 0
+            }
+          }
+        },
+        "right" : null,
+        "rotation" : 0,
+        "top" : -1204,
+        "visible" : true,
+        "width" : 9838,
+        "widthType" : 0
+      },
+      {
+        "__class" : "FrameNode",
+        "aspectRatio" : null,
+        "blendingEnabled" : 0,
+        "blendingMode" : "normal",
+        "borderBottom" : 1,
+        "borderColor" : "#222",
+        "borderEnabled" : 1,
+        "borderLeft" : 1,
+        "borderPerSide" : false,
+        "borderRight" : 1,
+        "borderStyle" : "solid",
+        "borderTop" : 1,
+        "borderWidth" : 1,
+        "bottom" : null,
+        "centerAnchorX" : 0.5,
+        "centerAnchorY" : 0.034464887276496499,
+        "children" : [
+
+        ],
+        "clip" : false,
+        "codeOverrideEnabled" : false,
+        "constraintsLocked" : false,
+        "deviceType" : null,
+        "exportOptions" : [
+
+        ],
+        "fillColor" : "#121212",
+        "fillEnabled" : true,
+        "fillImage" : null,
+        "fillImageOriginalName" : null,
+        "fillImagePixelHeight" : null,
+        "fillImagePixelWidth" : null,
+        "fillImageResize" : "fill",
+        "fillType" : "color",
+        "guidesX" : [
+
+        ],
+        "guidesY" : [
+
+        ],
+        "height" : 266,
+        "heightType" : 0,
+        "id" : "Nf9J5INhh",
+        "intrinsicHeight" : null,
+        "intrinsicWidth" : null,
+        "isExternalMaster" : null,
+        "isMaster" : false,
+        "isTarget" : false,
+        "left" : 16145,
+        "locked" : false,
+        "name" : "EnterPage Level",
+        "navigationTarget" : null,
+        "navigationTransition" : "push",
+        "navigationTransitionBackdropColor" : "rgba(4,4,15,.4)",
+        "navigationTransitionDirection" : "left",
+        "opacity" : 1,
+        "originalid" : "WW1v8k5XV",
+        "parentid" : "ncneL9a4_",
+        "previewSettings" : null,
+        "radius" : 0,
+        "radiusBottomLeft" : 0,
+        "radiusBottomRight" : 0,
+        "radiusIsRelative" : false,
+        "radiusPerCorner" : false,
+        "radiusTopLeft" : 0,
+        "radiusTopRight" : 0,
+        "replicaInfo" : {
+          "master" : "WW1v8k5XV",
+          "overrides" : {
+            "hSKviOO5A" : {
+              "centerAnchorX" : 0.49771294978654196,
+              "centerAnchorY" : 0.49812030075187969,
+              "styledText" : {
+                "__class" : "StyledTextDraft",
+                "blocks" : [
+                  {
+                    "data" : {
+                      "emptyStyle" : [
+                        "FONT:__SystemDefault-400-normal__",
+                        "COLOR:#eee",
+                        "LINEHEIGHT:1.2",
+                        "SIZE:138",
+                        "LETTERSPACING:6"
+                      ]
+                    },
+                    "depth" : 0,
+                    "entityRanges" : [
+
+                    ],
+                    "inlineStyleRanges" : [
+                      {
+                        "length" : 9,
+                        "offset" : 0,
+                        "style" : "FONT:__SystemDefault-400-normal__"
+                      },
+                      {
+                        "length" : 9,
+                        "offset" : 0,
+                        "style" : "COLOR:#eee"
+                      },
+                      {
+                        "length" : 9,
+                        "offset" : 0,
+                        "style" : "LINEHEIGHT:1.2"
+                      },
+                      {
+                        "length" : 9,
+                        "offset" : 0,
+                        "style" : "SIZE:138"
+                      },
+                      {
+                        "length" : 9,
+                        "offset" : 0,
+                        "style" : "LETTERSPACING:6"
+                      }
+                    ],
+                    "key" : "3g57g",
+                    "text" : "EnterPage",
+                    "type" : "unstyled"
+                  }
+                ],
+                "cached" : {
+                  "html" : "<div data-offset-key=\"3g57g-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"3g57g-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, serif;-webkit-text-fill-color:#eee;font-size:138px;letter-spacing:6px;line-height:1.2\"><span data-text=\"true\">EnterPage<\/span><\/span><\/div>",
+                  "os" : "macos 10_15 framerx",
+                  "size" : {
+                    "height" : 165,
+                    "width" : 647
+                  },
+                  "width" : 0
+                },
+                "entityMap" : {
+
+                }
+              },
+              "width" : 647
+            },
+            "WW1v8k5XV" : {
+              "bottom" : null,
+              "centerAnchorX" : 0.5,
+              "centerAnchorY" : 0.034464887276496499,
+              "left" : 16145,
+              "name" : "EnterPage Level",
               "right" : null,
               "top" : -1204,
               "width" : 9838,
@@ -3298,6 +3603,127 @@
         "top" : -549,
         "visible" : true,
         "width" : 1440,
+        "widthType" : 0
+      },
+      {
+        "__class" : "CodeComponentNode",
+        "aspectRatio" : null,
+        "bottom" : null,
+        "centerAnchorX" : 0,
+        "centerAnchorY" : 0,
+        "children" : [
+
+        ],
+        "clip" : true,
+        "codeComponentIdentifier" : ".\/_EnterPage.tsx__EnterPage",
+        "codeComponentProps" : {
+          "clientHeight" : 900,
+          "clientWidth" : 1440,
+          "locale" : "en"
+        },
+        "codeOverrideEnabled" : false,
+        "constraintsLocked" : false,
+        "deviceType" : null,
+        "exportOptions" : [
+
+        ],
+        "fillColor" : "rgba(255,255,255,1)",
+        "fillEnabled" : false,
+        "fillImage" : null,
+        "fillImageOriginalName" : null,
+        "fillImagePixelHeight" : null,
+        "fillImagePixelWidth" : null,
+        "fillImageResize" : "fill",
+        "fillType" : "color",
+        "height" : 900,
+        "heightType" : 0,
+        "id" : "HL4kxuHBu",
+        "intrinsicHeight" : null,
+        "intrinsicWidth" : null,
+        "left" : 16179,
+        "locked" : false,
+        "name" : "EnterPage - Apple Macbook Pro",
+        "opacity" : 1,
+        "originalid" : null,
+        "parentid" : "ncneL9a4_",
+        "previewSettings" : null,
+        "radius" : 0,
+        "radiusBottomLeft" : 0,
+        "radiusBottomRight" : 0,
+        "radiusIsRelative" : false,
+        "radiusPerCorner" : false,
+        "radiusTopLeft" : 0,
+        "radiusTopRight" : 0,
+        "right" : null,
+        "rotation" : 0,
+        "top" : 50,
+        "visible" : true,
+        "width" : 1440,
+        "widthType" : 0
+      },
+      {
+        "__class" : "CodeComponentNode",
+        "aspectRatio" : null,
+        "bottom" : null,
+        "centerAnchorX" : 0,
+        "centerAnchorY" : 0,
+        "children" : [
+
+        ],
+        "clip" : true,
+        "codeComponentIdentifier" : ".\/_EnterPage.tsx__EnterPage",
+        "codeComponentProps" : {
+          "clientHeight" : 812,
+          "clientWidth" : 375,
+          "locale" : "en"
+        },
+        "codeOverrideEnabled" : false,
+        "constraintsLocked" : false,
+        "deviceType" : null,
+        "exportOptions" : [
+
+        ],
+        "fillColor" : "rgba(255,255,255,1)",
+        "fillEnabled" : false,
+        "fillImage" : null,
+        "fillImageOriginalName" : null,
+        "fillImagePixelHeight" : null,
+        "fillImagePixelWidth" : null,
+        "fillImageResize" : "fill",
+        "fillType" : "color",
+        "height" : 812,
+        "heightType" : 0,
+        "id" : "iceDvWzpJ",
+        "intrinsicHeight" : null,
+        "intrinsicWidth" : null,
+        "left" : 17893,
+        "locked" : false,
+        "name" : "EnterPage - Apple iPhone XS",
+        "opacity" : 1,
+        "originalid" : null,
+        "parentid" : "ncneL9a4_",
+        "previewSettings" : {
+          "__class" : "PreviewSettings",
+          "bezel" : true,
+          "deviceType" : "framer\/FramerAppleIPhoneXS",
+          "responsive" : false,
+          "rotate" : false,
+          "skin" : "Space Gray",
+          "touch" : true,
+          "zoom" : -1
+        },
+        "radius" : 0,
+        "radiusBottomLeft" : 0,
+        "radiusBottomRight" : 0,
+        "radiusIsRelative" : false,
+        "radiusPerCorner" : false,
+        "radiusTopLeft" : 0,
+        "radiusTopRight" : 0,
+        "right" : null,
+        "rotation" : 0,
+        "top" : 75,
+        "visible" : true,
+        "width" : 375,
         "widthType" : 0
       }
     ],
