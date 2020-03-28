@@ -2,9 +2,11 @@ import * as React from 'react'
 import { Frame } from 'framer'
 import { useIntl } from 'react-intl'
 
+import i18nId from '../i18n/messageIds'
+
 import { ErrorBoundaryText } from './ErrorBoundaryText'
 
-export function HomepageFeatures () {
+export function HomePageFeatures() {
   const intl = useIntl()
 
   return (
@@ -16,7 +18,7 @@ export function HomepageFeatures () {
           width: '100%'
         }}
       >
-        {intl.formatMessage({ id: 'Homepage.Features' })}
+        {intl.formatMessage({ id: i18nId.HomePage.Features.title })}
       </Frame>
     </ErrorBoundaryText>
   )

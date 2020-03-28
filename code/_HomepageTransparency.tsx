@@ -2,12 +2,12 @@ import { addPropertyControls, ControlType, Frame } from 'framer'
 import * as React from 'react'
 import { IntlProvider } from 'react-intl'
 
-import { HomepageTransparency } from './components/HomepageTransparency'
+import { HomePageTransparency } from './components/HomePageTransparency'
 
 import * as i18n from './i18n/'
 import * as propertyControl from './propertyControls'
 
-export function _HomepageTransparency ({
+export function _HomePageTransparency ({
   locale,
   ...props
 }) {
@@ -18,15 +18,15 @@ export function _HomepageTransparency ({
       defaultLocale={i18n.defaultLocale}
       {...localeConfig}
     >
-      <HomepageTransparency />
+      <HomePageTransparency />
     </IntlProvider>
   )
 }
 
-_HomepageTransparency.defaultProps = {
+_HomePageTransparency.defaultProps = {
   locale: i18n.defaultLocale
 }
 
-addPropertyControls(_HomepageTransparency, {
+addPropertyControls(_HomePageTransparency, {
   locale: propertyControl.locale(),
 })

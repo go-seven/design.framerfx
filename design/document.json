@@ -277,7 +277,7 @@
         "isTarget" : false,
         "left" : 12619,
         "locked" : false,
-        "name" : "HomepageHero Level",
+        "name" : "HomePageHero Level",
         "navigationTarget" : null,
         "navigationTransition" : "push",
         "navigationTransitionBackdropColor" : "rgba(4,4,15,.4)",
@@ -344,12 +344,12 @@
                       }
                     ],
                     "key" : "3g57g",
-                    "text" : "HomepageHero",
+                    "text" : "HomePageHero",
                     "type" : "unstyled"
                   }
                 ],
                 "cached" : {
-                  "html" : "<div data-offset-key=\"3g57g-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"3g57g-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, serif;-webkit-text-fill-color:#eee;font-size:85px;letter-spacing:4px;line-height:1.2\"><span data-text=\"true\">HomepageHero<\/span><\/span><\/div>",
+                  "html" : "<div data-offset-key=\"3g57g-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"3g57g-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, serif;-webkit-text-fill-color:#eee;font-size:85px;letter-spacing:4px;line-height:1.2\"><span data-text=\"true\">HomePageHero<\/span><\/span><\/div>",
                   "os" : "macos 10_15 framerx",
                   "size" : {
                     "height" : 102,
@@ -369,7 +369,7 @@
               "centerAnchorX" : 0.5,
               "centerAnchorY" : 0.031073446327683617,
               "left" : 12619,
-              "name" : "HomepageHero Level",
+              "name" : "HomePageHero Level",
               "right" : null,
               "top" : -461,
               "width" : 2280
@@ -1440,7 +1440,7 @@
         "isTarget" : false,
         "left" : 6207,
         "locked" : false,
-        "name" : "Homepage Level",
+        "name" : "HomePage Level",
         "navigationTarget" : null,
         "navigationTransition" : "push",
         "navigationTransitionBackdropColor" : "rgba(4,4,15,.4)",
@@ -1507,12 +1507,12 @@
                       }
                     ],
                     "key" : "3g57g",
-                    "text" : "Homepage",
+                    "text" : "HomePage",
                     "type" : "unstyled"
                   }
                 ],
                 "cached" : {
-                  "html" : "<div data-offset-key=\"3g57g-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"3g57g-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, serif;-webkit-text-fill-color:#eee;font-size:138px;letter-spacing:6px;line-height:1.2\"><span data-text=\"true\">Homepage<\/span><\/span><\/div>",
+                  "html" : "<div data-offset-key=\"3g57g-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"3g57g-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, serif;-webkit-text-fill-color:#eee;font-size:138px;letter-spacing:6px;line-height:1.2\"><span data-text=\"true\">HomePage<\/span><\/span><\/div>",
                   "os" : "macos 10_15 framerx",
                   "size" : {
                     "height" : 165,
@@ -1531,7 +1531,7 @@
               "centerAnchorX" : 0.5,
               "centerAnchorY" : 0.034464887276496499,
               "left" : 6207,
-              "name" : "Homepage Level",
+              "name" : "HomePage Level",
               "right" : null,
               "top" : -1204,
               "width" : 9838,
@@ -1563,7 +1563,7 @@
 
             ],
             "clip" : true,
-            "codeComponentIdentifier" : ".\/_HomepageHero.tsx__HomepageHero",
+            "codeComponentIdentifier" : ".\/_HomePageHero.tsx__HomePageHero",
             "codeComponentProps" : {
               "borderRadius" : 10,
               "clientHeight" : 900,
@@ -1624,7 +1624,7 @@
 
             ],
             "clip" : true,
-            "codeComponentIdentifier" : ".\/_HomepageFeatures.tsx__HomepageFeatures",
+            "codeComponentIdentifier" : ".\/_HomePageFeatures.tsx__HomePageFeatures",
             "codeComponentProps" : {
               "locale" : "en"
             },
@@ -1681,7 +1681,7 @@
 
             ],
             "clip" : true,
-            "codeComponentIdentifier" : ".\/_HomepageRegister.tsx__HomepageRegister",
+            "codeComponentIdentifier" : ".\/_HomePageRegister.tsx__HomePageRegister",
             "codeComponentProps" : {
               "locale" : "en"
             },
@@ -1738,7 +1738,7 @@
 
             ],
             "clip" : true,
-            "codeComponentIdentifier" : ".\/_HomepageTransparency.tsx__HomepageTransparency",
+            "codeComponentIdentifier" : ".\/_HomePageTransparency.tsx__HomePageTransparency",
             "codeComponentProps" : {
               "locale" : "en"
             },
@@ -1795,7 +1795,7 @@
 
             ],
             "clip" : true,
-            "codeComponentIdentifier" : ".\/_HomepagePricing.tsx__HomepagePricing",
+            "codeComponentIdentifier" : ".\/_HomePagePricing.tsx__HomePagePricing",
             "codeComponentProps" : {
               "locale" : "en"
             },
@@ -1935,7 +1935,7 @@
         "intrinsicWidth" : null,
         "left" : 7840,
         "locked" : false,
-        "name" : "Homepage - Stack - Apple Macbook Pro",
+        "name" : "HomePage - Stack - Apple Macbook Pro",
         "opacity" : 1,
         "originalid" : null,
         "parentid" : "ncneL9a4_",
@@ -1971,7 +1971,7 @@
 
             ],
             "clip" : true,
-            "codeComponentIdentifier" : ".\/_HomepageHero.tsx__HomepageHero",
+            "codeComponentIdentifier" : ".\/_HomePageHero.tsx__HomePageHero",
             "codeComponentProps" : {
               "borderRadius" : 10,
               "clientHeight" : 812,
@@ -2032,7 +2032,7 @@
 
             ],
             "clip" : true,
-            "codeComponentIdentifier" : ".\/_HomepageFeatures.tsx__HomepageFeatures",
+            "codeComponentIdentifier" : ".\/_HomePageFeatures.tsx__HomePageFeatures",
             "codeComponentProps" : {
               "locale" : "en"
             },
@@ -2089,7 +2089,7 @@
 
             ],
             "clip" : true,
-            "codeComponentIdentifier" : ".\/_HomepageRegister.tsx__HomepageRegister",
+            "codeComponentIdentifier" : ".\/_HomePageRegister.tsx__HomePageRegister",
             "codeComponentProps" : {
               "locale" : "en"
             },
@@ -2146,7 +2146,7 @@
 
             ],
             "clip" : true,
-            "codeComponentIdentifier" : ".\/_HomepageTransparency.tsx__HomepageTransparency",
+            "codeComponentIdentifier" : ".\/_HomePageTransparency.tsx__HomePageTransparency",
             "codeComponentProps" : {
               "locale" : "en"
             },
@@ -2203,7 +2203,7 @@
 
             ],
             "clip" : true,
-            "codeComponentIdentifier" : ".\/_HomepagePricing.tsx__HomepagePricing",
+            "codeComponentIdentifier" : ".\/_HomePagePricing.tsx__HomePagePricing",
             "codeComponentProps" : {
               "locale" : "en"
             },
@@ -2343,7 +2343,7 @@
         "intrinsicWidth" : null,
         "left" : 10356,
         "locked" : false,
-        "name" : "Homepage - Stack - Apple iPhone XS",
+        "name" : "HomePage - Stack - Apple iPhone XS",
         "opacity" : 1,
         "originalid" : null,
         "parentid" : "ncneL9a4_",
@@ -2915,7 +2915,7 @@
 
         ],
         "clip" : true,
-        "codeComponentIdentifier" : ".\/_HomepageHero.tsx__HomepageHero",
+        "codeComponentIdentifier" : ".\/_HomePageHero.tsx__HomePageHero",
         "codeComponentProps" : {
           "borderRadius" : 10,
           "clientHeight" : 900,
@@ -2944,7 +2944,7 @@
         "intrinsicWidth" : null,
         "left" : 12619,
         "locked" : false,
-        "name" : "Homepage Hero - Apple Macbook Pro",
+        "name" : "HomePage Hero - Apple Macbook Pro",
         "opacity" : 1,
         "originalid" : null,
         "parentid" : "ncneL9a4_",
@@ -2973,7 +2973,7 @@
 
         ],
         "clip" : true,
-        "codeComponentIdentifier" : ".\/_HomepageHero.tsx__HomepageHero",
+        "codeComponentIdentifier" : ".\/_HomePageHero.tsx__HomePageHero",
         "codeComponentProps" : {
           "borderRadius" : 10,
           "clientHeight" : 812,
@@ -3002,7 +3002,7 @@
         "intrinsicWidth" : null,
         "left" : 14380,
         "locked" : false,
-        "name" : "Homepage Hero - Apple iPhone XS",
+        "name" : "HomePage Hero - Apple iPhone XS",
         "opacity" : 1,
         "originalid" : null,
         "parentid" : "ncneL9a4_",
@@ -3135,7 +3135,7 @@
         "isTarget" : false,
         "left" : 9788,
         "locked" : false,
-        "name" : "Homepage - Apple iPhone XS",
+        "name" : "HomePage - Apple iPhone XS",
         "navigationTarget" : null,
         "navigationTransition" : "push",
         "navigationTransitionBackdropColor" : "rgba(4,4,15,.4)",
@@ -3267,7 +3267,7 @@
         "isTarget" : false,
         "left" : 6207,
         "locked" : false,
-        "name" : "Homepage - Apple Macbook Pro",
+        "name" : "HomePage - Apple Macbook Pro",
         "navigationTarget" : null,
         "navigationTransition" : "push",
         "navigationTransitionBackdropColor" : "rgba(4,4,15,.4)",

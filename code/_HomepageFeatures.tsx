@@ -2,12 +2,12 @@ import * as React from 'react'
 import { addPropertyControls, Frame } from 'framer'
 import { IntlProvider } from 'react-intl'
 
-import { HomepageFeatures } from './components/HomepageFeatures'
+import { HomePageFeatures } from './components/HomePageFeatures'
 
 import * as i18n from './i18n/'
 import * as propertyControl from './propertyControls'
 
-export function _HomepageFeatures (props) {
+export function _HomePageFeatures (props) {
   const { locale } = props
   const localeConfig = i18n.config[locale]
 
@@ -16,15 +16,15 @@ export function _HomepageFeatures (props) {
       defaultLocale={i18n.defaultLocale}
       {...localeConfig}
     >
-      <HomepageFeatures />
+      <HomePageFeatures />
     </IntlProvider>
   )
 }
 
-_HomepageFeatures.defaultProps = {
+_HomePageFeatures.defaultProps = {
   locale: i18n.defaultLocale
 }
 
-addPropertyControls(_HomepageFeatures, {
+addPropertyControls(_HomePageFeatures, {
   locale: propertyControl.locale(),
 })

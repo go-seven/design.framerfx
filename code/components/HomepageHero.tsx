@@ -2,11 +2,13 @@ import * as React from 'react'
 import { Frame, Stack } from 'framer'
 import { useIntl } from 'react-intl'
 
+import i18nId from '../i18n/messageIds'
+
 import { mobile } from './breakpoints'
 
 import { Logo } from './Logo'
 
-export function HomepageHero ({
+export function HomePageHero({
   borderRadius,
   color,
   contentOffsetY,
@@ -29,7 +31,7 @@ export function HomepageHero ({
       }}
     >
       <Frame
-        animate={(Math.abs(contentOffsetY) > (clientHeight / 6)) ? { opacity: 0 } : { opacity: 1 } }
+        animate={(Math.abs(contentOffsetY) > (clientHeight / 6)) ? { opacity: 0 } : { opacity: 1 }}
         color={color}
         background="transparent"
         style={{
@@ -76,7 +78,7 @@ export function HomepageHero ({
                   width: '100%'
                 }}
               >
-                {intl.formatMessage({ id: 'Homepage.Features' })}
+                {intl.formatMessage({ id: i18nId.HomePage.Features.title })}
               </Frame>
 
               <Frame
@@ -86,7 +88,7 @@ export function HomepageHero ({
                   width: '100%'
                 }}
               >
-                {intl.formatMessage({ id: 'Homepage.Pricing' })}
+                {intl.formatMessage({ id: i18nId.HomePage.Pricing.title })}
               </Frame>
 
               <Frame
@@ -114,7 +116,7 @@ export function HomepageHero ({
                       height: '4rem'
                     }}
                   >
-                    {intl.formatMessage({ id: 'Authentication.Button.Enter' })}
+                    {intl.formatMessage({ id: i18nId.Authentication.Action.Enter })}
                   </Frame>
 
                   <Frame
@@ -127,7 +129,7 @@ export function HomepageHero ({
                       height: '4rem'
                     }}
                   >
-                    {intl.formatMessage({ id: 'Authentication.Button.Register' })}
+                    {intl.formatMessage({ id: i18nId.Authentication.Action.Register })}
                   </Frame>
                 </Stack>
               </Frame>
@@ -219,7 +221,7 @@ export function HomepageHero ({
             }}
           >
             <span>
-              {intl.formatMessage({ id: 'Homepage.Hero.Welcome' })}
+              {intl.formatMessage({ id: i18nId.HomePage.Hero.welcome })}
             </span>
           </Frame>
         </Stack>

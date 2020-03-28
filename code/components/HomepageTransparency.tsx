@@ -2,7 +2,9 @@ import * as React from 'react'
 import { Frame } from 'framer'
 import { useIntl } from 'react-intl'
 
-export function HomepageTransparency () {
+import i18nId from '../i18n/messageIds'
+
+export function HomePageTransparency() {
   const intl = useIntl()
 
   return (
@@ -14,7 +16,7 @@ export function HomepageTransparency () {
         width: '100%'
       }}
     >
-      {intl.formatMessage({ id: 'Homepage.Transparency' })}
+      {intl.formatMessage({ id: i18nId.HomePage.Transparency.message })}
     </Frame>
   )
 }

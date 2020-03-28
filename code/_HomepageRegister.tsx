@@ -2,12 +2,12 @@ import { addPropertyControls, ControlType, Frame } from 'framer'
 import * as React from 'react'
 import { IntlProvider } from 'react-intl'
 
-import { HomepageRegister } from './components/HomepageRegister'
+import { HomePageRegister } from './components/HomePageRegister'
 
 import * as i18n from './i18n/'
 import * as propertyControl from './propertyControls'
 
-export function _HomepageRegister ({
+export function _HomePageRegister ({
   locale,
   ...props
 }) {
@@ -18,15 +18,15 @@ export function _HomepageRegister ({
       defaultLocale={i18n.defaultLocale}
       {...localeConfig}
     >
-      <HomepageRegister />
+      <HomePageRegister />
     </IntlProvider>
   )
 }
 
-_HomepageRegister.defaultProps = {
+_HomePageRegister.defaultProps = {
   locale: i18n.defaultLocale
 }
 
-addPropertyControls(_HomepageRegister, {
+addPropertyControls(_HomePageRegister, {
   locale: propertyControl.locale(),
 })

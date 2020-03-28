@@ -7,7 +7,7 @@ import {
 } from 'framer'
 import { IntlProvider } from 'react-intl'
 
-import { HomepageHero } from './components/HomepageHero'
+import { HomePageHero } from './components/HomePageHero'
 
 import * as i18n from './i18n/'
 import * as propertyControl from './propertyControls'
@@ -15,7 +15,7 @@ import * as propertyControl from './propertyControls'
 // TODO resize handler, see for example:
 // https://gist.github.com/steveruizok/b9ff0a24a735f37c16794bc27da36164
 // resize must be implemented in the actual container, document an example.
-export function _HomepageHero ({
+export function _HomePageHero ({
   borderRadius,
   clientHeight,
   clientWidth,
@@ -32,7 +32,7 @@ export function _HomepageHero ({
       {...localeConfig}
     >
       <Frame {...props}>
-        <HomepageHero
+        <HomePageHero
           borderRadius={borderRadius}
           clientHeight={clientHeight}
           clientWidth={clientWidth}
@@ -47,7 +47,7 @@ export function _HomepageHero ({
   )
 }
 
-_HomepageHero.defaultProps = {
+_HomePageHero.defaultProps = {
   borderRadius: 10,
   clientHeight: 400,
   clientWidth: 400,
@@ -55,22 +55,22 @@ _HomepageHero.defaultProps = {
   locale: i18n.defaultLocale
 }
 
-addPropertyControls(_HomepageHero, {
+addPropertyControls(_HomePageHero, {
   borderRadius: {
     title: 'Border Radius',
     type: ControlType.Number,
-    defaultValue: _HomepageHero.defaultProps.borderRadius
+    defaultValue: _HomePageHero.defaultProps.borderRadius
   },
   clientHeight: {
     title: 'Client Height',
     type: ControlType.Number,
-    defaultValue: _HomepageHero.defaultProps.clientHeight,
+    defaultValue: _HomePageHero.defaultProps.clientHeight,
   },
-  clientWidth: propertyControl.clientWidth(_HomepageHero.defaultProps.clientWidth),
+  clientWidth: propertyControl.clientWidth(_HomePageHero.defaultProps.clientWidth),
   color: {
     title: 'Text Color',
     type: ControlType.String,
-    defaultValue: _HomepageHero.defaultProps.color
+    defaultValue: _HomePageHero.defaultProps.color
   },
   locale: propertyControl.locale(),
 })

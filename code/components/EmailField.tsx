@@ -12,11 +12,12 @@ import {
 
 export function EmailField ({
   errorMessage = '',
-  inputRef
+  inputRef,
+  label
 }) {
   return (
     <Field>
-      <Label>Email</Label>
+      <Label>{label}</Label>
 
       <Control hasIconsLeft>
         <Input

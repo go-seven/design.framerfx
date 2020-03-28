@@ -2,11 +2,11 @@ import * as React from 'react'
 import { addPropertyControls, ControlType, Frame } from 'framer'
 import { IntlProvider } from 'react-intl'
 
-import { HomepagePricing } from './components/HomepagePricing'
+import { HomePagePricing } from './components/HomePagePricing'
 
 import * as i18n from './i18n/'
 
-export function _HomepagePricing ({
+export function _HomePagePricing ({
   locale,
   ...props
 }) {
@@ -17,16 +17,16 @@ export function _HomepagePricing ({
       defaultLocale={i18n.defaultLocale}
       {...localeConfig}
     >
-      <HomepagePricing />
+      <HomePagePricing />
     </IntlProvider>
   )
 }
 
-_HomepagePricing.defaultProps = {
+_HomePagePricing.defaultProps = {
   locale: i18n.defaultLocale
 }
 
-addPropertyControls(_HomepagePricing, {
+addPropertyControls(_HomePagePricing, {
   locale: {
     title: 'Locale',
     type: ControlType.Enum,
