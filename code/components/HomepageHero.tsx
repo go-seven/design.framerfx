@@ -6,7 +6,7 @@ import i18nId from '../i18n/messageIds'
 
 import { mobile } from './breakpoints'
 
-import { FirstPage } from './FirstPage'
+import { Hero } from './Hero'
 import { Logo } from './Logo'
 
 export function HomePageHero ({
@@ -24,7 +24,7 @@ export function HomePageHero ({
   const isMobile = clientWidth <= mobile
 
   return (
-    <FirstPage>
+    <Hero>
       <Frame
         animate={(Math.abs(contentOffsetY) > (clientHeight / 6)) ? { opacity: 0 } : { opacity: 1 }}
         color={color}
@@ -221,6 +221,6 @@ export function HomePageHero ({
           </Frame>
         </Stack>
       </Frame>
-    </FirstPage>
+    </Hero>
   )
 }

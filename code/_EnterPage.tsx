@@ -6,7 +6,6 @@ import * as React from 'react'
 import { IntlProvider } from 'react-intl'
 
 import { EnterAccountForm } from './components/EnterAccountForm'
-import { FirstPage } from './components/FirstPage'
 
 import * as i18n from './i18n/'
 
@@ -24,13 +23,11 @@ export function _EnterPage ({
       defaultLocale={i18n.defaultLocale}
       {...localeConfig}
     >
-      <FirstPage>
-        <EnterAccountForm
-          clientWidth={clientWidth}
-          enterAccount={Function.prototype}
-          enterAccountRequestIsWaiting={false}
-        />
-      </FirstPage>
+      <EnterAccountForm
+        clientWidth={clientWidth}
+        enterAccount={Function.prototype}
+        enterAccountRequestIsWaiting={false}
+      />
     </IntlProvider>
   )
 }

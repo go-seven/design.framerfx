@@ -12,7 +12,7 @@ import {
 import i18nId from '../i18n/messageIds'
 
 import { EmailField } from './EmailField'
-import { FirstPage } from './FirstPage'
+import { Hero } from './Hero'
 import { PasswordField } from './PasswordField'
 
 export function EnterAccountForm ({
@@ -22,13 +22,13 @@ export function EnterAccountForm ({
   const intl = useIntl()
 
   return (
-    <FirstPage>
+    <Hero>
       <Frame>
         <EnterAccountForm
           enterAccount={enterAccount}
           enterAccountRequestIsWaiting={enterAccountRequestIsWaiting}
         />
       </Frame>
-    </FirstPage>
+    </Hero>
   )
 }

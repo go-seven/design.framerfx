@@ -22,6 +22,7 @@ export function PasswordField ({
     <Field>
       <Label>
         {label}
+
         {forgotPasswordMessage && (
           <A
             href=''

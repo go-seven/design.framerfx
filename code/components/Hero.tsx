@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Stack } from 'framer'
 
-export function FirstPage ({ children }) {
+export function Hero ({ children }) {
   return (
     <Stack
       distribution="center"

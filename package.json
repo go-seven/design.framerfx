@@ -6,6 +6,7 @@
 	"license": "MIT",
 	"scripts": {
 		"eslint": " eslint --ext .js,.ts,.tsx .",
+		"eslint--fix": " eslint --fix --ext .js,.ts,.tsx .",
 		"i18n": "cpy node_modules/go-seven-i18n/dist/* code/i18n/",
 		"postsass:fonts": "cpy node_modules/go-seven-assets/fonts/* fonts/",
 		"sass": "run-p sass:*",

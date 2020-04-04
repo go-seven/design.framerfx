@@ -57,7 +57,6 @@
 "@framer/framer.device-skin-apple-iphone-xs-spacegrey@^1.0.0":
   version "1.0.0"
   resolved "https://registry.framer.com/@framer/framer.device-skin-apple-iphone-xs-spacegrey/-/@framer/framer.device-skin-apple-iphone-xs-spacegrey-1.0.0.tgz#d9f524f5a6a4afe8cb413c00f3f16fe4d52ee09e"
-  integrity sha512-BWmGnCvnPmYel3ytJ1eiNxugHTj3e7eiih8L1b3RZtB4ZjgF6HiCMp+nsB0wAOJrMS2sA+fEYMDzxqybX9Dukg==
 
 "@framer/framer.device-skin-apple-macbook-pro@^1.0.0":
   version "1.0.0"
@@ -1367,11 +1366,11 @@ globule@^1.0.0:
 
 "go-seven-assets@github:go-seven/assets":
   version "1.0.0"
-  resolved "https://codeload.github.com/go-seven/assets/tar.gz/d353362373a039bf72b61179cce3ef0ee5c3381e"
+  resolved "https://codeload.github.com/go-seven/assets/tar.gz/9b81fcca6f2125129f1be247338e26197be37a7a"
 
 "go-seven-i18n@github:go-seven/i18n":
   version "0.0.0"
-  resolved "https://codeload.github.com/go-seven/i18n/tar.gz/78bd7b81127859a33198d63aa35f103888d31bef"
+  resolved "https://codeload.github.com/go-seven/i18n/tar.gz/e924757549e502693ad9d7d89c9df11112a3bee4"
 
 graceful-fs@^4.1.2:
   version "4.2.3"
